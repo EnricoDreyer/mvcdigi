@@ -1,0 +1,87 @@
+.purejscarousel {
+    overflow: hidden;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+    .slide {
+        float: left;
+        color: #fff;
+        float: left;
+        height: 200px;
+        text-align: center;
+        width: 310px;
+        margin-left: 10px;
+    }
+    .slide_small {
+        float: left;
+        color: #fff;
+        float: left;
+        height: 200px;
+        text-align: center;
+        width: 200px !important;
+        margin-left: 10px;
+    }
+    .purejscarousel-btn {
+        display: none;
+    }
+    &:hover {
+        .purejscarousel-btn {
+            display: inline;
+            background: transparent;
+            border: 0;
+            box-shadow: none;
+            outline: none;
+            cursor: pointer;
+            height: 35px;
+            margin-top: -35px;
+            position: absolute;
+            top: 50%;
+            width: 35px;
+            &.purejscarousel-btn-next {
+                border-bottom: 4px solid #fff;
+                border-right: 4px solid #fff;
+                right: 7px;
+                -moz-transform: rotate(315deg);
+                -webkit-transform: rotate(315deg);
+                transform: rotate(315deg);
+            }
+            &.purejscarousel-btn-prev {
+                border-bottom: 4px solid #fff;
+                border-left: 4px solid #fff;
+                left: 10px;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .purejscarousel-dots-container {
+        float: left;
+        margin-top: 5px;
+        text-align: center;
+        width: 100%;
+        .purejscarousel-dot {
+            display: inline-block;
+            margin: 0 5px;
+            background: rgb(255, 255, 255);
+            border: 0;
+            border-radius: 30%;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            cursor: pointer;
+            height: 4px;
+            outline: none;
+            margin: 0 5px;
+            width: 3px;
+            &.active {
+                cursor: default;
+                opacity: .5;
+            }
+        }
+    }
+}

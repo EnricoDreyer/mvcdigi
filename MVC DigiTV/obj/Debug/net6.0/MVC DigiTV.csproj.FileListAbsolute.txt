@@ -1,0 +1,26 @@
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\appsettings.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.staticwebassets.runtime.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.exe
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.deps.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.runtimeconfig.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.dll
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\ref\MVC DigiTV.dll
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\bin\Debug\net6.0\MVC DigiTV.pdb
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.csproj.AssemblyReference.cache
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.AssemblyInfoInputs.cache
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.AssemblyInfo.cs
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.csproj.CoreCompileInputs.cache
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.RazorAssemblyInfo.cache
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.RazorAssemblyInfo.cs
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\scopedcss\bundle\MVC DigiTV.styles.css
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\scopedcss\projectbundle\MVC DigiTV.bundle.scp.css
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.dll
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\ref\MVC DigiTV.dll
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.pdb
+C:\Users\enric\Desktop\MVC TEST\MVC DigiTV\MVC DigiTV\obj\Debug\net6.0\MVC DigiTV.genruntimeconfig.cache

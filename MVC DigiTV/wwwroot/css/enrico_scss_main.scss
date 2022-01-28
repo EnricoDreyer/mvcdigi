@@ -1,0 +1,59 @@
+// imports
+@import "./_variables.scss";
+@import "./_purejscarousel.scss";
+
+// styling
+
+.sidenav-footer-hover{
+    &:hover{
+        img{
+            height: 121px !important;
+        }
+    }
+}
+
+.max_height_category::-webkit-scrollbar{
+    width: 0 !important;
+    display: none;
+}
+
+.max_height_category{
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#channel-accordion::-webkit-scrollbar{
+    width: 0 !important;
+    display: none;
+}
+
+#channel-accordion{
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.breadcrumbs-text{
+    text-transform: uppercase;
+    font-size: 1.31rem;
+}
+
+.breadcrumbs-text:hover{
+    font-size: 1.29rem;
+}
+
+.justify-center{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#ad-container-top{
+    .flipping-advertisement{
+        padding: 0px;
+    }
+}

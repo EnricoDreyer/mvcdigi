@@ -1,0 +1,2530 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+
+    <link rel="stylesheet" href="~/css/glider_style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://digicentral.co.za/wp-content/uploads/2020/10/cropped-DigiCentral-Icon-32x32.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <!-- Custom css imports -->
+    <link rel="stylesheet" href="~/css/main_3.css">
+    <link rel="stylesheet" href="~/css/home.css">
+    <link rel="stylesheet" href="~/css/enrico_main.css">
+    <link rel="stylesheet" href="~/css/enrico_scss_main.css">
+
+    <!-- First scripts to run -->
+    <script>
+        var dataSeason = []; 
+        var dataLiveEpisode = []; 
+        var dataEpisode = [];
+
+        var mainChannel = "digi-tv";
+        var urlDomain = "http://localhost";
+        var video = "";
+        var dateTime = "2022-01-28T06:44:17Z";
+    </script>
+
+    <!-- JQuery & Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <!-- PureJS Carousel -->
+    <script src="~/js/purejscarousel.js"></script>
+
+    <!-- Chromecast SDK -->
+    <script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css" />
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
+
+
+    <!-- THEOplayer library and css -->
+    <script type="text/javascript" src="https://cdn.myth.theoplayer.com/c5a9246b-9800-4534-86e4-dc70f15431a0/THEOplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.myth.theoplayer.com/c5a9246b-9800-4534-86e4-dc70f15431a0/ui.css" />
+    <!-- CSS customization style -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDY66YE93C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EDY66YE93C', { 'debug_mode':true });
+    </script>
+
+
+    <style>
+        .theo-primary-color,
+        .vjs-selected {
+            color: #ffffff !important;
+        }
+
+        .theo-primary-background {
+            color: #000000 !important;
+            background-color: #ffffff !important;
+        }
+        .video-poster {
+            width: 300px;
+            height: 169px;
+            border-radius: 13px;
+            color: rgb(0, 0, 0);
+            box-shadow: 5px 5px 10px;
+
+        }
+
+        .category-poster {
+            width: 200px;
+            height: 200px;
+            border-radius: 13px;
+            color: rgb(0, 0, 0);
+        }
+
+        .swiper-container-poster {
+            width: 100%;
+            height: 220px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 180px;
+        }
+
+        .slider-wrapper-poster {
+            position:relative;
+            float: left;
+        }
+
+        .slider-wrapper {
+            position:relative;
+            float: left;
+        }
+        .slider-title {
+            position: absolute;
+            color: #fff;
+            font-size: 20px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            text-align: left;
+            z-index: 2;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .slider-text {
+            position: absolute;
+            color: #fff;
+            font-size: 20px;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            color: white;
+            /* font-weight: bold; */
+            text-align: left;
+            z-index: 2;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .slider-wrapper:before {
+            content: '';
+            position:absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            border-radius: 13px;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button onclick="scrollToTop()" id="go-to-top-btn">
+        <i width="30" height="30" data-feather="arrow-up"></i>
+    </button>
+    <div class="everything-container container-fluid overflow-hidden">
+        <div class="row justify-content-around overflow-hidden">
+            <div class="col-12">
+                <div class="position-fixed mt-2" id="mini-sidenav">
+                    <div id="channel-name-container" class="position-relative mb-1 mini-sidenav-item">
+                        <div class="d-flex align-items-center justify-content-between white-border-hover" onclick="goToPage22()">
+                            <i id="search-icon" class="icon-button gray-bg" width="20" height="20" data-feather="home"></i>
+                            <div id="side_channel" class="item-description mr-3"><strong>DigiTV</strong></div>
+                        </div>
+                    </div>
+                    <div id="channels-container" class="position-relative mb-1 mini-sidenav-item">
+                        <div class="d-flex align-items-center justify-content-between white-border-hover" onclick="showChannelsModal()">
+                            <i id="channels-icon" class="icon-button gray-bg" width="20" height="20" data-feather="loader"></i>
+                            <div class="item-description mr-3"><strong>CHANNELS</strong></div>
+                        </div>
+                    </div>
+                    <div id="maximise-container" class="position-relative mb-1 mini-sidenav-item">
+                        <div class="d-flex align-items-center justify-content-between white-border-hover" onclick="openNav()">
+                            <i id="maximise-icon" class="icon-button gray-bg" width="20" height="20" data-feather="arrow-right-circle"></i>
+                            <div class="item-description mr-3"><strong>MAXIMISE</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="position-fixed d-flex" id="profile-search-upload">
+                    <div id="search-container" class="position-relative mr-2 medium-white-border overflow-hidden">
+                        <div id="search-field">
+                            <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <i id="search-icon" class="medium-white-border icon-button dark-gray-bg" width="20" height="20" data-feather="search" onclick="toggleSearchDiv()"></i>
+                    </div>
+                    <div id="profile-container" class="position-relative text-center">
+                        <div id="profile-popup">
+                            <div class="w-100 py-3" style="min-width: 240px;">
+                                <div class="col-12 mb-2">
+                                    <div class="btn w-100 custom-filled-btn_icon-right gradient-bg_gray icon-button" onclick="hideProfileDiv()">
+                                        <span style="margin-top: 5px;">PROFILE</span>
+                                        <i style="margin-top: 5px;" width="20" height="20" data-feather="user"></i>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="btn btn-outline-light w-100 custom-filled-btn_icon-right medium-white-border round-icon-gradient-bg_gray">
+                                        <i width="20" height="20" data-feather="upload-cloud"></i>
+                                        <span style="margin-top: 2px;">UPLOADS</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="btn btn-outline-light w-100 custom-filled-btn_icon-right medium-white-border round-icon-gradient-bg_gray">
+                                        <i width="20" height="20" data-feather="loader"></i>
+                                        <span style="margin-top: 2px;">FOLLOWING</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="btn btn-outline-light w-100 custom-filled-btn_icon-right medium-white-border round-icon-gradient-bg_gray">
+                                        <i width="20" height="20" data-feather="heart"></i>
+                                        <span style="margin-top: 2px;">LIKES</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn btn-outline-light w-100 custom-filled-btn_icon-right medium-white-border round-icon-gradient-bg_gray">
+                                        <i width="20" height="20" data-feather="settings"></i>
+                                        <span style="margin-top: 2px;">SETTINGS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i id="profile-icon" class="medium-white-border icon-button dark-gray-bg" width="20" height="20" data-feather="user" onclick="toggleProfileDiv()"></i>
+                    </div>
+                </div>
+                <div class="w-100 mt-2" id="header-img" style="vertical-align: middle;">
+                    <div class="w-100 h-100 position-relative" style="padding-bottom: 15px;padding-top: 15px;">
+                        <img id="header-banner-img" src="" class="img-fluid position-absolute" alt="Main Logo" style="top: 0;bottom: 0;margin: auto;left: 0;right: 0;height: 160px;">
+                    </div>
+                </div>
+                <div id="main">
+
+                    <div class="modal fade" id="channel-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="channel-modal-label" aria-hidden="true">
+                        <div class="position-absolute modal-big-x" style="z-index: 50">
+                            <i width="50" height="50" style="cursor: pointer;" stroke-width="4" data-feather="x" onclick="closeChannelModal()"></i>
+                        </div>
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="d-flex">
+                                        <i width="40" height="40" data-feather="loader"></i>
+                                        <h3 class="modal-title ml-3" id="channel-modal-label">ALL CHANNELS</h3>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div id="channel-accordion-container_popup" class="card card-body mt-3">
+                                                <div  class="accordion" id="channel-accordion_popup">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- videos & ads -->
+
+                    <div class="row">
+                        <div class="col w-100 live-video-row" id="row_live_swiper">
+                            <div class="row flex">
+                                <div id="video-title-row" class="col-xl-9 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center flex" style="font-size: 28px;" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: grey" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle arrow-image"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+
+                                    <!-- <img src="https://tv.digicentral.co.za/assets/images/digi-next-arrow.png" class="arrow-image"> -->
+                                    <h3 id="live-title">LIVE</h3>
+                                </div>
+            
+                                <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8">
+                                    <div class="live-expand_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg" style="display: block">
+                                        <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                        <span style="margin-top: 6px;">MORE</span>
+                                    </div>
+                                    <div class="live-less_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg">
+                                        <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                        <span style="margin-top: 6px;">LESS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="live_swiper" class="mt-2 pt-0">
+        
+                                <!-- LOADING...... -->
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-border" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="expand-collapse-container_mobile col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="live-video-expand_btn__mobile btn btn-outline-light custom-outline-btn medium-white-border mt-3 gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                    <span style="margin-top: 6px;">MORE</span>
+                                </div>
+                                <div class="live-video-less_btn__mobile btn btn-outline-light custom-outline-btn medium-white-border mb-3 gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                    <span style="margin-top: 6px;">LESS</span>
+                                </div>
+                            </div>
+        
+                            <div class="expanded-live-videos mt-2" style="margin-left: 1px;">
+                                <div id="video-live-expand_0" class="row no-gutters"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col w-100 video-row">
+                            <div class="row">
+                                <div id="episodes-title-row" class="col-xl-9 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="color: grey" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle arrow-image"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+
+                                    <!-- <img src="https://tv.digicentral.co.za/assets/images/digi-next-arrow.png" class="arrow-image"> -->
+                                    <h3 id="episodes-title" class="video-title uppercase"> Featured Videos </h3>
+                                </div>
+                                <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8">
+                                    <div class="video-expand_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg" style="display: block">
+                                        <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                        <span style="margin-top: 6px;">MORE</span>
+                                    </div>
+                                    <div class="video-less_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg">
+                                        <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                        <span style="margin-top: 6px;">LESS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="video-carousel_0" class="carousel purejscarousel">
+
+                            </div>
+                            <!-- here -->
+                            <div id="video_swiper" class="swiper-container video-slider1 mt-2">
+                                <!-- LOADING...... -->
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-border" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EXPANDED -->
+
+                            <div class="expand-collapse-container_mobile col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="video-expand_btn__mobile btn btn-outline-light custom-outline-btn medium-white-border mt-3 gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                    <span style="margin-top: 6px;">MORE</span>
+                                </div>
+                                <div class="video-less_btn__mobile btn btn-outline-light custom-outline-btn medium-white-border mb-3 gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                    <span style="margin-top: 6px;">LESS</span>
+                                </div>
+                            </div>
+
+                            <div class="expanded-videos">
+                                <div id="video-expand_0" class="row no-gutters mt-2"></div>
+                            </div>
+                            <!-- END EXPANDED -->
+                        </div>
+                    </div>
+
+                    <div class="flex mt-3">
+                        <div id="sub_channel-title-row" class="col-xl-9 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 mb-3 align-self-center flex" style="margin-bottom: 0px !important;">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="color: grey" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle arrow-image"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+
+                            <!-- <img src="https://tv.digicentral.co.za/assets/images/digi-next-arrow.png" class="arrow-image"> -->
+                            <h3 id="sub_channel-title" class="video-title uppercase" style="font-size: 28px;"> Schools </h3>
+                        </div>
+
+                        <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8 pr-0">
+                            <!-- <div class="video-expand_btn btn btn-outline-light w-100 custom-outline-btn medium-white-border"> -->
+                            <div class="school-expand_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg" style="display: block">
+                                <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                <span style="margin-top: 6px;">MORE</span>
+                            </div>
+                            <div class="school-less_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg">
+                                <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                <span style="margin-top: 6px;">LESS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- posters #1 CHANNELS-->
+                    <div class="row">
+                        <div class="col w-100 poster-row pt-2">
+                            
+                            <!-- BUTTONS -->
+
+                            <div class="expand-collapse-container_mobile col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="school-less_btn__mobile btn btn-outline-light w-100 custom-outline-btn medium-white-border mb-3 gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                    <span style="margin-top: 6px;">LESS</span>
+                                </div>
+                            </div>
+
+                            <!-- EXPANDED -->
+                            <div id="expanded-posters" class="expanded-posters purejscarousel-slides-container">
+                                <div id="glider-poster-expand_0"  class="glider-poster-expand_0 glider row no-gutters">
+                                <div id="poster-expand_0" class="poster-expand_0 glider row no-gutters carousel purejscarousel"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- POSTER END -->
+
+                        <!-- sub-category_sliders -->
+                       
+                        <div id="sub_categories"></div>
+                        
+                        <!-- series_sliders -->
+                        <div id="Sery"></div>
+                        
+                        <!-- sub-channel_slider -->
+                        <div id="sub-channels"></div>
+                        
+                        <div class="expand-collapse-container_mobile col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="school-expand_btn__mobile btn btn-outline-light w-100 custom-outline-btn medium-white-border mt-3 gray-bg">
+                                <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                <span style="margin-top: 6px;">MORE</span>
+                            </div>
+                        </div>
+
+                        <!-- other-channels slider -->
+                        
+                        <div class="row mt-4">
+                            <div class="col w-100 other-video-row">
+                                <div class="row flex">
+
+                                    <div id="sub_channel-title-other-row" class="col-xl-9 col-lg-6 col-md-6 col-sm-12 col-12 pl-0 pl-3 align-self-center flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="color: grey" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle arrow-image"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+
+                                        <!-- <img src="https://tv.digicentral.co.za/assets/images/digi-next-arrow.png" class="arrow-image"> -->
+                                        <h3 id="sub_channel-other-title" class="video-title uppercase" style="font-size: 28px;"> Other Channels </h3>
+                                    </div>
+                                    
+                                    <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8">
+                                        <div class="other-expand_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg" style="display: block">
+                                            <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                            <span style="margin-top: 6px;">MORE</span>
+                                        </div>
+                                        <div class="other-less_btn btn btn-outline-light custom-outline-btn medium-white-border gray-bg">
+                                            <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                            <span style="margin-top: 6px;">LESS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="other-channels"></div>
+                            </div>
+        
+                            <div class="expand-collapse-container_mobile col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-3 ml-3" style="padding-right: 50px;">
+                                <div class="other-expand_btn__mobile btn btn-outline-light w-100 custom-outline-btn medium-white-border gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-down-circle"></i>
+                                    <span style="margin-top: 6px;">MORE</span>
+                                </div>
+                                <div class="other-less_btn__mobile btn btn-outline-light w-100 custom-outline-btn medium-white-border gray-bg">
+                                    <i width="30" height="30" style="margin-top: 3px;" data-feather="arrow-up-circle"></i>
+                                    <span style="margin-top: 6px;">LESS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="expanded-other-videos mt-2">
+                                <div id="video-other-expand_0" class="row no-gutters" style="padding-left: 0.96rem!important;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    </div>
+
+                    <!-- ADS -->
+                    <div class="row justify-center" style="width: 100%; margin-left: 0px;">
+                        <div id="ad-container" class="banner-advertisement-row my-3 justify-center p-0"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <div id="sidenav-inner-container">
+            <div id="sidenav-bottom-container" style="position: relative;height: 69%;">
+                <div class="container mt-2">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <div class="btn w-100 custom-filled-btn gray-bg" onclick="closeNav()">
+                                <i style="margin-top: 5px;" width="30" height="30" data-feather="arrow-left-circle"></i>
+                                <span style="margin-top: 9px;">MINIMIZE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="home" class="row mb-2">
+                        <div class="col">
+                            <div class="btn w-100 custom-filled-btn gray-bg"  onclick="goHome()">
+                                <i style="margin-top: 5px;" width="30" height="30" data-feather="home"></i>
+                                <span style="margin-top: 9px;">HOME</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div id="toggle-channels-btn" class="btn w-100 custom-filled-btn gray-bg" data-toggle="collapse" data-target="#channelsCollapse" aria-expanded="false" aria-controls="channelsCollapse" onclick="showChannelsOnSidenav()">
+                                <i style="margin-top: 5px;" width="30" height="30" data-feather="loader"></i>
+                                <span style="margin-top: 9px;">CHANNELS</span>
+                            </div>
+                            <div class="collapse max_height_category" id="channelsCollapse" style="overflow: auto; height: 400px; display: none">
+                                <div id="collapse-content" class="card card-body" style="display: none">
+                                    <div class="accordion id="channel-accordion">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidenav-footer" class="text-center">
+                        <div class="divider-line text-center"></div>
+                        <!-- <p>I NEED A CHANNEL?</p> -->
+                        <img src="~/images/digitv_logo.png" alt="DigiTV Logo" style="height: 120px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- for sidenav -->
+    <template id="dynamic-channels">
+        <div class="card channel-container-card" onclick="changeChannelFromList( 'http://localhost', '{{option.channel_slug}}')">
+            <div class="card-header" id="channel_{{index}}">
+                <h5 class="mb-0">
+                    <button id="channel-btn_{{index}}" class="btn w-100 text-right" type="button" data-toggle="collapse"
+                        data-target="#options-for-channel_{{index}}" aria-expanded="true"
+                        aria-controls="options-for-channel_{{index}}">
+                        <i style="color: white" class="fa fa-sort-down" id="btn-expand-side-nav" onclick="function showChannelDropdown(event) {setClickedOptionStyle(); event.stopPropagation();}; showChannelDropdown()"></i>
+                        <span style="color: white; float: left">{{channel.name}}</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="options-for-channel_{{index}}" class="collapse options-collapse"
+                aria-labelledby="channel_{{index}}" data-parent="#channel-accordion">
+                <div  class="card-body">
+                    <!-- more dynamic for-loop content -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="dynamic-channel-options">
+        <div >
+
+            <div onclick="changeChannelCategoryFromList( 'http://localhost', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
+
+            <z>{{option.name}} </z>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- for channel modal -->
+    <template id="dynamic-channels_popup">
+        <div class="card channel-container-card" onclick="changeChannelFromList( 'http://localhost', '{{option.channel_slug}}')">
+            <div class="card-header" id="channel_{{index}}_popup">
+                <h5 class="mb-0">
+                    <button id="channel-btn_{{index}}_popup" class="btn w-100 text-right" type="button" data-toggle="collapse"
+                        data-target="#options-for-channel_{{index}}_popup" aria-expanded="true"
+                        aria-controls="options-for-channel_{{index}}_popup">
+                        <i style="color: white" class="fa fa-sort-down" onclick="function showChannelDropdown(event) {setClickedOptionStyle(); event.stopPropagation();}; showChannelDropdown()"></i>
+                        <span style="color: white; float: left">{{channel.name}}</span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="options-for-channel_{{index}}_popup" class="collapse options-collapse_popup"
+                aria-labelledby="channel_{{index}}_popup" data-parent="#channel-accordion_popup">
+                <div id="listPrograms" class="card-body">
+                    <!-- more dynamic for-loop content -->
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="dynamic-channel-options_popup">
+        <div onclick="changeChannelCategoryFromList( 'http://localhost', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
+            <z>{{option.name}}</z>
+        </div>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <!-- display ads -->
+    <script id="adTemplate" type="text/x-handlebars-template">
+            <div class="banner-advertisement-row my-3">
+                <div class="col w-100" style="padding-left: 0px; padding-top: 1rem;">
+                    <div class="row">
+                        {{#each this}}
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pb-3 left-advertisement" >
+                                <div class="banner-advertisement">
+                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url={{this.channel}}&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
+                                        <img src="{{this.ad_url}}" alt="Banner">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 flipping-advertisement">
+                                <div class="flip-banner-advertisement banner-advertisement">
+                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url={{this.channel}}&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
+                                        <img src="{{this.ad_url}}" alt="Banner">
+                                    </a>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+    </script>
+    <script>
+
+        var apiDigiAdRequest = new XMLHttpRequest();
+        apiDigiAdRequest.open('GET', 'https://provisual.online/sandbox/digi/ad_serv.php?authToken=90900909&user_id=999&host_url=http://localhost&campaign=' + mainChannel + '-2021');
+        apiDigiAdRequest.onload = function() {
+            if (apiDigiAdRequest.status >= 200 && apiDigiAdRequest.status < 400) {
+                // This is where we'll do something with the retrieved data
+                var data = JSON.parse(apiDigiAdRequest.responseText);
+                console.log(data);
+                createAd_HTML(data);
+            } else {
+                console.log("We connected to the server, but it returned an error.");
+            }
+        };
+
+        apiDigiAdRequest.onerror = function() {
+            console.log("Connection error");
+        };
+
+        apiDigiAdRequest.send();
+
+        var positionCounter = 0;
+        Handlebars.registerHelper("position", function() {
+            return positionCounter++;
+        });
+
+        var episodeCounter = 0;
+        Handlebars.registerHelper("f_episode", function() {
+            if(episodeCounter > 2){
+                return '<li id="episode-' + episodeCounter++ + '" class="col-md-4" style="display:none">';
+            } else {
+                return '<li id="episode-' + episodeCounter++ + '" class="col-md-4">';
+            }
+
+        });
+
+        function createAd_HTML(contentData){
+            debugger
+            var rawTemplate = document.getElementById("adTemplate").innerHTML;
+            var compiledTemplate = Handlebars.compile(rawTemplate);
+            var ourGeneratedHTML = compiledTemplate(contentData);
+
+            var contentContainer = document.getElementById("ad-container");
+
+            contentContainer.innerHTML = ourGeneratedHTML;
+        }
+
+        Handlebars.registerHelper( "when",function(operand_1, operator, operand_2, options) {
+        var operators = {
+            'eq': function(l,r) { return l == r; },
+            'noteq': function(l,r) { return l != r; },
+            'gt': function(l,r) { return Number(l) > Number(r); },
+            'or': function(l,r) { return l || r; },
+            'and': function(l,r) { return l && r; },
+            '%': function(l,r) { return (l % r) === 0; }
+            }
+            , result = operators[operator](operand_1,operand_2);
+
+            if (result) return options.fn(this);
+            else  return options.inverse(this);
+        });
+
+    </script>
+
+
+    <script id="contentCategoriesSlider" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                <div class="swiper-slide slider-wrapper-poster mr-3" style="width: 200px;">
+                    <img class="category-poster" src="https://tv.digicentral.co.za:1339{{poster.formats.thumbnail.url}}" alt="{{name}}">
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                            <div onclick="selectCategory('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+
+    </script>
+
+    <script id="contentCategoriesExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front poster">
+                            <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.formats.thumbnail.url}}" alt="{{name}}">
+                            <div class="poster__overlay">
+                                <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                    <div onclick="selectSeries('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script>
+
+        function displayCategories(channel){
+
+            sessionStorage.setItem("channel", channel);
+            var apiCategoryRequest = new XMLHttpRequest();
+            apiCategoryRequest.open('GET', 'https://tv.digicentral.co.za:1339/categories/?channels.slug=' + channel);
+            apiCategoryRequest.onload = function() {
+                if (apiCategoryRequest.status >= 200 && apiCategoryRequest.status < 400) {
+                    var dataCategory = JSON.parse(apiCategoryRequest.responseText);
+                    console.log(dataCategory);
+                    createCategorySlider(dataCategory);
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiCategoryRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiCategoryRequest.send();
+
+            function createCategorySlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawCategorySliderTemplate = document.getElementById("contentCategoriesSlider").innerHTML;
+                var rawCategoryExpandTemplate = document.getElementById("contentCategoriesExpand").innerHTML;
+
+                var compiledCategorySliderTemplate = Handlebars.compile(rawCategorySliderTemplate);
+                var compiledCategoryExpandTemplate = Handlebars.compile(rawCategoryExpandTemplate);
+
+                var ourGeneratedCategorySlider = compiledCategorySliderTemplate(contentData);
+                var ourGeneratedCategoryExpand = compiledCategoryExpandTemplate(contentData);
+
+                var temp = document.getElementById("poster_swiper");
+
+                var contentCategorySliderContainer = document.getElementById("poster_swiper");
+                var contentCategoryExpandContainer = document.getElementById("poster-expand_0");
+
+                contentCategorySliderContainer.innerHTML = ourGeneratedCategorySlider;
+                contentCategoryExpandContainer.innerHTML = ourGeneratedCategoryExpand;
+
+                const swiper = new Swiper('.poster-slider1', {
+
+                    direction: 'horizontal',
+                    freeMode: true,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+
+            }
+        }
+
+    </script>
+
+
+    <script id="contentChannels" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="slide slide_small">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+                        </div>
+                        <div class="flip-card-back">
+                            <img class="back-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+                            <div class="back-img-overlay-text">
+                                <h4>{{name}}</h4>
+                                    <div class="btn btn-outline-light w-100 custom-outline-btn_small medium-white-border">
+                                        <i style="margin-top: -2px;" width="20" height="20" data-feather="play"></i>
+                                        <div onclick="selectChannel('{{slug}}','{{redirect_url}}');"> Explore </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+
+    <script id="contentChannelsExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div id="thisishere" class="card-image view z-depth-1">
+                <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+
+                <div onclick="showEpisode(this);" class="mask d-flex align-items-end"  data-epoch-start="{{this.start_time}}" data-epoch-end="{{this.end_time}}">
+                    <span class="bg-success w-100">
+                        <p class="white-text ml-4 h5 p-2 mb-0">{{name}}</p>
+                    </span>
+                </div>
+
+            </div>
+        {{/each}}
+    </script>
+
+    <script id="contentChannelsExpand1" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+                        </div>
+                        <div class="flip-card-back">
+                            <img class="back-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+                            <div class="back-img-overlay-text">
+                                <h4>{{name}}</h4>
+                                <div class="btn btn-outline-light w-100 custom-outline-btn_small medium-white-border">
+                                    <i style="margin-top: -2px;" width="20" height="20" data-feather="play"></i>
+                                    <div onclick="selectChannel('{{slug}}');"> Explore </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script>
+
+
+        function displayChannels(channels){
+
+            var apiChannelRequest = new XMLHttpRequest();
+
+            apiChannelRequest.open('GET', 'https://tv.digicentral.co.za:1339/channels');
+            apiChannelRequest.onload = function() {
+                if (apiChannelRequest.status >= 200 && apiChannelRequest.status < 400) {
+                    var dataChannel = JSON.parse(apiChannelRequest.responseText);
+                    console.log(dataChannel);
+                    createChannelSlider(dataChannel);
+                    initCarousel_Posters();  //Channel
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiChannelRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiChannelRequest.send();
+
+            function createChannelSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawChannelSliderTemplate = document.getElementById("contentChannels").innerHTML;
+                var rawChannelExpandTemplate = document.getElementById("contentChannelsExpand").innerHTML;
+
+                var compiledChannelSliderTemplate = Handlebars.compile(rawChannelSliderTemplate);
+                var compiledChannelExpandTemplate = Handlebars.compile(rawChannelExpandTemplate);
+
+                var ourGeneratedChannelSlider = compiledChannelSliderTemplate(contentData);
+                var ourGeneratedChannelExpand = compiledChannelExpandTemplate(contentData);
+
+                var contentChannelSliderContainer = document.getElementById("poster-carousel_0");
+                var contentChannelExpandContainer = document.getElementById("glider-poster-expand_0");
+
+                contentChannelSliderContainer.innerHTML = ourGeneratedChannelSlider;
+                contentChannelExpandContainer.innerHTML = ourGeneratedChannelExpand;
+
+                // init slider
+
+            }
+        }
+
+        // displayChannels('channels');
+    </script>
+
+    <script id="contentSubChannelSlider" type="text/x-handlebars-template">
+
+        <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8"></div>
+
+        <div id="poster_swiper_sub" class="swiper-container poster-slider-subchannels" style="height: 200px">
+            <div class="swiper-wrapper">
+                    {{#each this}}
+                    <div class="swiper-slide slider-wrapper-poster mr-3" style="width: 200px;">
+                        {{#if poster.url}}
+                        <img class="category-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                        {{else}}
+                        <img class="category-poster" src="https://res.cloudinary.com/provisual-tech/image/upload/l_text:verdana_30:{{name}},co_rgb:ffffff/v1626002342/DigiTV/poster_bg_ycxm6v.jpg" alt="{{name}}">
+                        {{/if}}
+                        <div class="poster__overlay">
+                            <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+    </script>
+
+    <script id="contentSubChannelExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="flip-card mb-3 mr-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}" style="border-radius: 13px;">
+
+                        <div class="poster__overlay">
+                            <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div id="thisishere" class="card-image view z-depth-1" style="width: 200px; margin-right: 1rem; margin-bottom: 15px">
+            
+                    <div onclick="selectSubChannel(this);" class="mask d-flex align-items-end"  data-epoch-start="{{this.start_time}}" data-epoch-end="{{this.end_time}}">
+                </div>
+            </div>
+        </div>
+            
+            </div>
+        {{/each}}                               
+    </script>
+
+    <script>
+
+        function displaySubChannel(channel_slug){
+            var apiSubChannelRequest = new XMLHttpRequest();
+            apiSubChannelRequest.open('GET', 'https://tv.digicentral.co.za:1339/channels?_sort=name:ASC&top_category=Schools');
+            apiSubChannelRequest.onload = function() {
+                if (apiSubChannelRequest.status >= 200 && apiSubChannelRequest.status < 400) {
+                    var dataSubChannel = JSON.parse(apiSubChannelRequest.responseText);
+                    console.log('https://tv.digicentral.co.za:1339/sub-channels?channel_slug=' + channel_slug);
+                    createSubChannelSlider(dataSubChannel);
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiSubChannelRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiSubChannelRequest.send();
+
+            function createSubChannelSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSubChannelSliderTemplate = document.getElementById("contentSubChannelSlider").innerHTML;
+                var rawSubChannelExpandTemplate = document.getElementById("contentSubChannelExpand").innerHTML;
+
+                var compiledSubChannelSliderTemplate = Handlebars.compile(rawSubChannelSliderTemplate);
+                var compiledSubChannelExpandTemplate = Handlebars.compile(rawSubChannelExpandTemplate);
+
+                var ourGeneratedSubChannelSlider = compiledSubChannelSliderTemplate(contentData);
+                var ourGeneratedSubChannelExpand = compiledSubChannelExpandTemplate(contentData);
+
+                var contentSubChannelSliderContainer = document.getElementById("sub-channels");
+                var contentSubChannelExpandContainer = document.getElementById("poster-expand_0");
+
+                contentSubChannelSliderContainer.innerHTML = ourGeneratedSubChannelSlider;
+                contentSubChannelExpandContainer.innerHTML = ourGeneratedSubChannelExpand;
+
+                // init slider
+                const swiperSubChannel = new Swiper('.poster-slider-subchannels', {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+
+            }
+        }
+    </script>
+
+    <script id="contentOtherChannelSlider" type="text/x-handlebars-template">
+        <div class="expand-collapse-container col-xl-3 col-lg-6 col-md-6 col-sm-8 col-8 pt-2"></div>
+        <div id="poster_swiper_sub" class="swiper-container poster-slider-otherchannels" style="height: 200px">
+            <div class="swiper-wrapper">
+                    {{#each this}}
+                    <div class="swiper-slide slider-wrapper-poster mr-3" style="width: 200px;">
+                        {{#if poster.url}}
+                        <img class="category-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                        {{else}}
+                        <img class="category-poster" src="https://res.cloudinary.com/provisual-tech/image/upload/l_text:verdana_30:{{name}},co_rgb:ffffff/v1626002342/DigiTV/poster_bg_ycxm6v.jpg" alt="{{name}}">
+                        {{/if}}
+                        <div class="poster__overlay">
+                            <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+    </script>
+
+    <script id="contentOtherChannelExpand" type="text/x-handlebars-template">
+        {{#each this}}
+        <div class="flip-card mb-3 mr-3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}" style="border-radius: 13px;">
+
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                            <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                        </div>
+                    </div>
+                </div>
+                    <div id="thisishere" class="card-image view z-depth-1" style="width: 200px; margin-right: 1rem; margin-bottom: 15px">
+        
+                <div onclick="selectSubChannel(this);" class="mask d-flex align-items-end"  data-epoch-start="{{this.start_time}}" data-epoch-end="{{this.end_time}}">
+            </div>
+        </div>
+    </div>
+            
+            </div>
+        {{/each}}                               
+    </script>
+
+<script>
+
+function displayOtherChannel(channel_slug){
+    // sessionStorage.setItem("channel", channel);
+    var apiOtherChannelRequest = new XMLHttpRequest();
+    apiOtherChannelRequest.open('GET', 'https://tv.digicentral.co.za:1339/channels?_sort=name:ASC&top_category=Towns');
+    apiOtherChannelRequest.onload = function() {
+        if (apiOtherChannelRequest.status >= 200 && apiOtherChannelRequest.status < 400) {
+            var dataOtherChannel = JSON.parse(apiOtherChannelRequest.responseText);
+            console.log('https://tv.digicentral.co.za:1339/sub-channels?channel_slug=' + channel_slug);
+            createOtherChannelSlider(dataOtherChannel);
+        } else {
+            console.log("We connected to the server, but it returned an error.");
+        }
+    };
+
+    apiOtherChannelRequest.onerror = function() {
+    console.log("Connection error");
+    };
+
+    apiOtherChannelRequest.send();
+
+    function createOtherChannelSlider(contentData){
+
+        contentData.forEach(element => {
+            if(element.poster){
+                if(element.poster.url.includes("/uploads")){
+                    element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                } else if (element.poster.url.includes("/thumbs")){
+                    element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                }
+            }
+        });
+
+        var rawOtherChannelSliderTemplate = document.getElementById("contentOtherChannelSlider").innerHTML;
+        var rawOtherChannelExpandTemplate = document.getElementById("contentOtherChannelExpand").innerHTML;
+
+        var compiledOtherChannelSliderTemplate = Handlebars.compile(rawOtherChannelSliderTemplate);
+        var compiledOtherChannelExpandTemplate = Handlebars.compile(rawOtherChannelExpandTemplate);
+
+        var ourGeneratedOtherChannelSlider = compiledOtherChannelSliderTemplate(contentData);
+        var ourGeneratedOtherChannelExpand = compiledOtherChannelExpandTemplate(contentData);
+
+        var contentOtherChannelSliderContainer = document.getElementById("other-channels");
+        var contentOtherChannelExpandContainer = document.getElementById("video-other-expand_0");
+
+        contentOtherChannelSliderContainer.innerHTML = ourGeneratedOtherChannelSlider;
+        contentOtherChannelExpandContainer.innerHTML = ourGeneratedOtherChannelExpand;
+
+        // init slider
+        const swiperOtherChannel = new Swiper('.poster-slider-otherchannels', {
+
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: "auto",
+            spaceBetween: 15,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    }
+}
+</script>
+
+    <script id="contentSeriesSlider" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                <div class="swiper-slide slider-wrapper-poster mr-3" style="width: 200px;">
+                    {{#if this.poster.url}}
+                    <img class="category-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                    {{else}}
+                    <img class="category-poster" src="https://res.cloudinary.com/provisual-tech/image/upload/l_text:verdana_30:{{name}},co_rgb:ffffff/v1626002342/DigiTV/poster_bg_ycxm6v.jpg" alt="{{name}}">
+                    {{/if}}
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                            <div onclick="selectSeries('{{slug}}','{{name}}','{{banner.url}}');"> EXPLORE </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+
+    </script>
+
+    <script id="contentSeriesExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front poster">
+                            <img class="front-img" src="https://res.cloudinary.com/provisual-tech/image/upload/l_text:verdana_30:{{name}},co_rgb:ffffff/v1626002342/DigiTV/poster_bg_ycxm6v.jpg" alt="{{name}}">
+                            <div class="poster__overlay">
+                                <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                    <div onclick="selectSeries('{{slug}}','{{name}}');"> EXPLORE </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script>
+
+        function displaySeries(filter){
+
+            var apiSeriesRequest = new XMLHttpRequest();
+            apiSeriesRequest.open('GET', 'https://tv.digicentral.co.za:1339/content-series?' + filter + '&_limit=1000');
+            apiSeriesRequest.onload = function() {
+                if (apiSeriesRequest.status >= 200 && apiSeriesRequest.status < 400) {
+                    var dataSeries = JSON.parse(apiSeriesRequest.responseText);
+                    console.log(dataSeries);
+                    createSeriesSlider(dataSeries);
+                    initCarousel_Posters();  //Series
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiSeriesRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiSeriesRequest.send();
+
+            function createSeriesSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSeriesSliderTemplate = document.getElementById("contentSeriesSlider").innerHTML;
+                var rawSeriesExpandTemplate = document.getElementById("contentSeriesExpand").innerHTML;
+
+                var compiledSeriesSliderTemplate = Handlebars.compile(rawSeriesSliderTemplate);
+                var compiledSeriesExpandTemplate = Handlebars.compile(rawSeriesExpandTemplate);
+
+                var ourGeneratedSeriesSlider = compiledSeriesSliderTemplate(contentData);
+                var ourGeneratedSeriesExpand = compiledSeriesExpandTemplate(contentData);
+
+                var contentSeriesSliderContainer = document.getElementById("poster_swiper");
+                var contentSeriesExpandContainer = document.getElementById("glider-poster-expand_0");
+
+                contentSeriesSliderContainer.innerHTML = ourGeneratedSeriesSlider;
+                contentSeriesExpandContainer.innerHTML = ourGeneratedSeriesExpand;
+
+                const swiper2 = new Swiper('.poster-slider1', {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    slidesPerView: "auto",
+                    spaceBetween: 30,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+
+            }
+        }
+
+    </script>
+
+    <script id="contentSeriesEpisodes" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                <div class="swiper-slide slider-wrapper mr-3" style="width: 300px;">
+                    {{#if this.poster.url}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                    {{else}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                    {{/if}}
+                    <!-- <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt=""> -->
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small" style="z-index: 99;">
+                            <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" data-episode-title="{{{name}}}" 
+                                location_selected="Featured"
+                                data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" 
+                                data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                    <!-- <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-episode-embed="https://tv.digicentral.co.za:8082/digitv/{{video.hash}}"> PLAY </div> -->
+                                    <!-- <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-episode-embed="https://tv.digicentral.co.za:8082/digitv/{{video.hash}}">PLAY</div> -->
+                        </div>
+
+                            <div class="back-img-overlay-text" style="top:5px;">
+                                <h5>{{name}}</h5>
+                                <p style="line-height: 1;"><small>{{description}}</small></p>
+                            </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </script>
+
+    <script>
+        function displaySeriesEpisodes(channel) {
+
+            var apiSeriesEpisodesRequest = new XMLHttpRequest();
+            var apiSeriesContentRequest = new XMLHttpRequest();
+            apiSeriesContentRequest.open('GET', 'https://tv.digicentral.co.za:1339/content-series?_sort=name:ASC&id=' + channel + '&_limit=1000');
+            apiSeriesContentRequest.onload = function() {
+                if (apiSeriesContentRequest.status >= 200 && apiSeriesContentRequest.status < 400) {
+                    var dataSeriesContent = JSON.parse(apiSeriesContentRequest.responseText);
+                    console.log('seriesContent length ' + dataSeriesContent[0].series_episodes.length);
+                    dataSeriesContent.sort((a, b) => (a.name) - (b.name));
+                    if(dataSeriesContent[0].series_episodes != 0){
+
+                        var apiSeriesEpisodesRequest = new XMLHttpRequest();
+                        apiSeriesEpisodesRequest.open('GET', 'https://tv.digicentral.co.za:1339/series-episodes?_sort=name:ASC&content_sery.id=' + channel + '&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&_limit=1000");
+                        apiSeriesEpisodesRequest.onload = function() {
+                            if (apiSeriesEpisodesRequest.status >= 200 && apiSeriesEpisodesRequest.status < 400) {
+                                var dataSeriesEpisodes = JSON.parse(apiSeriesEpisodesRequest.responseText);
+                                console.log('length ' + dataSeriesEpisodes.length);
+                                dataSeriesEpisodes.sort((a, b) => (a.name) - (b.name));
+                                createSeriesEpisodesSlider(dataSeriesEpisodes);
+                            } else {
+                                console.log("We connected to the server, but it returned an error.");
+                            }
+                        };
+
+                        apiSeriesEpisodesRequest.onerror = function() {
+                        console.log("Connection error");
+                        };
+
+                        apiSeriesEpisodesRequest.send();
+
+                    } else {
+
+                        // alert('episode');
+                        var apiSeriesEpisodesRequest = new XMLHttpRequest();
+                        apiSeriesEpisodesRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes?_sort=published_at:DESC&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&content_sery.id=' + channel + '&_limit=1000');
+                        apiSeriesEpisodesRequest.onload = function() {
+                            if (apiSeriesEpisodesRequest.status >= 200 && apiSeriesEpisodesRequest.status < 400) {
+                                var dataSeriesEpisodes = JSON.parse(apiSeriesEpisodesRequest.responseText);
+                                console.log('length ' + dataSeriesEpisodes.length);
+                                dataSeriesEpisodes.sort((a, b) => (a.episode) - (b.episode));
+                                createSeriesEpisodesSlider(dataSeriesEpisodes);
+                            } else {
+                                console.log("We connected to the server, but it returned an error.");
+                            }
+                        };
+
+                        apiSeriesEpisodesRequest.onerror = function() {
+                        console.log("Connection error");
+                        };
+
+                        apiSeriesEpisodesRequest.send();
+                    }
+
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiSeriesContentRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiSeriesContentRequest.send();
+
+            function createSeriesEpisodesSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSeriesEpisodeSliderTemplate = document.getElementById("contentSeriesEpisodes").innerHTML;
+                var compiledSeriesEpisodeSliderTemplate = Handlebars.compile(rawSeriesEpisodeSliderTemplate);
+                var ourGeneratedSeriesEpisodeSlider = compiledSeriesEpisodeSliderTemplate(contentData);
+                var contentSliderContainer = document.getElementById("Sery-" + channel);
+                contentSliderContainer.innerHTML = ourGeneratedSeriesEpisodeSlider;
+
+                const swiperSeriesEpisodes = new Swiper('.video-slider-' + channel, {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            }
+        }
+    </script>
+
+    <script id="listSery" type="text/x-handlebars-template">
+        {{#each this}}
+            {{#each this.content_series}}
+                <br><br>
+                <h3 id="series-title" class="video-title uppercase" style="font-size: 28px;">{{this.name}}</h3>
+                <div id="Sery-{{this.id}}" class="swiper-container video-slider-{{this.id}}"></div>
+            {{/each}}
+        {{/each}}
+    </script>
+
+    <script>
+        function displaySery(category) {
+            var apiSeryRequest = new XMLHttpRequest();
+            apiSeryRequest.open('GET', 'https://tv.digicentral.co.za:1339/categories?slug=' + category);
+            apiSeryRequest.onload = function() {
+                if (apiSeryRequest.status >= 200 && apiSeryRequest.status < 400) {
+                    var dataSery = JSON.parse(apiSeryRequest.responseText);
+
+                    console.log(dataSery);
+
+                    dataSery.sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
+                    createSerySlider(dataSery);
+
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+            apiSeryRequest.onerror = function() {
+            console.log("Connection error");
+            };
+            apiSeryRequest.send();
+            function createSerySlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSeryTemplate = document.getElementById("listSery").innerHTML;
+                var compiledSeryTemplate = Handlebars.compile(rawSeryTemplate);
+                var ourGeneratedSery = compiledSeryTemplate(contentData);
+                var contentSeryContainer = document.getElementById("Sery");
+                contentSeryContainer.innerHTML = ourGeneratedSery;
+
+                var i;
+                for (i = 0; i < contentData.length; i++) {
+                    for (s = 0; s < contentData[i].content_series.length; s++){
+                        displaySeriesEpisodes(contentData[i].content_series[s].id);
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <script id="contentSubCategoryEpisodeSlider" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                {{#each this.episodes}}
+                    <div class="swiper-slide slider-wrapper mr-3" style="width: 300px;">
+                        {{#if this.poster.url}}
+                        <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                        {{else}}
+                        <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                        {{/if}}
+                        <div class="poster__overlay">
+                            <div class="btn btn-outline-light w-50 custom-outline-btn_small" style="z-index: 99;">
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                </div>
+
+                                <div class="back-img-overlay-text" style="top:5px;">
+                                    <h5>{{name}}</h5>
+                                    <p style="line-height: 1;"><small>{{description}}</small></p>
+                                </div>
+                        </div>
+                    </div>
+                {{/each}}
+            {{/each}}
+        </div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </script>
+
+    <script>
+        function displaySubCategoryEpisodes(series, id) {
+            var apiSubCategoryEpisodeRequest = new XMLHttpRequest();
+            apiSubCategoryEpisodeRequest.open('GET', 'https://tv.digicentral.co.za:1339/sub-categories?_sort=name:ASC&slug=' + series);
+            apiSubCategoryEpisodeRequest.onload = function() {
+                if (apiSubCategoryEpisodeRequest.status >= 200 && apiSubCategoryEpisodeRequest.status < 400) {
+
+                    var dataSubCategoryEpisode = JSON.parse(apiSubCategoryEpisodeRequest.responseText);
+                    console.log(dataSubCategoryEpisode);
+                    console.log(Object.keys(dataSubCategoryEpisode).length);
+
+                        const urlParams = new URLSearchParams(window.location.search);
+
+                        urlParams.set('order', 'date');
+
+                        var temp = urlParams;
+
+                    if (Object.keys(dataSubCategoryEpisode).length==0){
+                        alert('no content');
+                    } else {
+                        createSubCategoryEpisodeSlider(dataSubCategoryEpisode);
+                    }
+
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiSubCategoryEpisodeRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiSubCategoryEpisodeRequest.send();
+
+            function createSubCategoryEpisodeSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSubCategoryEpisodeSliderTemplate = document.getElementById("contentSubCategoryEpisodeSlider").innerHTML;
+
+                var compiledSubCategoryEpisodeSliderTemplate = Handlebars.compile(rawSubCategoryEpisodeSliderTemplate);
+
+                var ourGeneratedSubCategoryEpisodeSlider = compiledSubCategoryEpisodeSliderTemplate(contentData);
+
+                var contentSubCategoryEpisodeSliderContainer = document.getElementById("sub_cat-" + series);
+
+                contentSubCategoryEpisodeSliderContainer.innerHTML = ourGeneratedSubCategoryEpisodeSlider;
+
+                const swiperSubCategoryEpisodes = new Swiper('.video-slider-' + id, {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    freeMode: true,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        // el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            }
+
+        }
+    </script>
+
+
+    <script id="listSubCategory" type="text/x-handlebars-template">
+
+            {{#each this}}
+                <br><br>
+                <div id="sub_category-title-row" class="flex">
+                    <h3 id="sub_category-title" class="video-title uppercase" style="font-size: 28px;">{{this.name}}</h3>
+                    <div id="sub_cat-{{this.slug}}" class="swiper-container video-slider-{{this.id}}"></div>
+                </div>
+            {{/each}}
+
+    </script>
+
+    <script>
+        function displaySubCategory(category) {
+            var apiSubCategoryRequest = new XMLHttpRequest();
+            apiSubCategoryRequest.open('GET', 'https://tv.digicentral.co.za:1339/sub-categories?categories.slug=' + category);
+            apiSubCategoryRequest.onload = function() {
+                if (apiSubCategoryRequest.status >= 200 && apiSubCategoryRequest.status < 400) {
+                    var dataSubCategory = JSON.parse(apiSubCategoryRequest.responseText);
+                    console.log(dataSubCategory);
+                    dataSubCategory.sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime());
+                    createSubCategorySlider(dataSubCategory);
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+            apiSubCategoryRequest.onerror = function() {
+            console.log("Connection error");
+            };
+            apiSubCategoryRequest.send();
+            function createSubCategorySlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSubCategoryTemplate = document.getElementById("listSubCategory").innerHTML;
+                var compiledSubCategoryTemplate = Handlebars.compile(rawSubCategoryTemplate);
+                var ourGeneratedSubCategory = compiledSubCategoryTemplate(contentData);
+                var contentSubCategoryContainer = document.getElementById("sub_categories");
+                contentSubCategoryContainer.innerHTML = ourGeneratedSubCategory;
+
+                var i;
+                for (i = 0; i < contentData.length; i++) {
+                    displaySubCategoryEpisodes(contentData[i].slug, contentData[i].id);
+                }
+            }
+        }
+    </script>
+
+
+<script id="contentLiveSlider" type="text/x-handlebars-template">
+    <div class="row">
+        <div class="col w-100 video-row pt-0 pb-0">
+
+            <div class="swiper-container video-slider-live">
+                <div class="swiper-wrapper">
+                    {{#each this}}
+                        <div class="swiper-slide slider-wrapper mr-3" style="width: 300px;">
+                            {{#if poster.url}}
+                                <img class="video-poster" src="https://tv.digicentral.co.za:1339{{poster.url}}" alt="{{name}}">
+                            {{else}}
+                                <img class="video-poster" src="https://res.cloudinary.com/provisual-tech/image/upload//co_rgb:ffffff,l_text:verdana_60:{{start_time}},y_-230/co_rgb:ffffff,l_text:verdana_60:{{team1}},y_-30/co_rgb:ffffff,l_text:verdana_60:{{team2}},y_110/co_rgb:e53961,l_text:verdana_70_bold:GAME%20DETAIL,y_230/DigiTV/Slide1_jsdn6k.jpg" alt="{{name}}">
+                            {{/if}}
+                                <div class="poster__overlay">
+                                    <div class="btn btn-outline-light w-50 custom-outline-btn_small"  style="z-index: 99;">
+                                        {{#checkdate start_time}}
+                                            <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Live" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" 
+                                                data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-app="{{dvr.application}}"  data-episode-stream-key="{{dvr.stream_key}}" data-episode-start-time="{{start_time}}" data-episode-end-time="{{end_time}}" 
+                                                data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                        {{else}}
+                                            <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Live" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" 
+                                                data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-app="{{dvr.application}}"  data-episode-stream-key="{{dvr.stream_key}}" data-episode-start-time="{{start_time}}" data-episode-end-time="{{end_time}}" 
+                                                data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                        {{/checkdate}}
+                                    </div>
+                                        <div class="back-img-overlay-text" style="top:5px;">
+                                            <h5>{{name}}</h5>
+                                            <p style="line-height: 1;"><small>{{description}}</small></p>
+                                        </div>
+                                </div>
+                        </div>
+                    {{/each}}
+                </div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+
+    </script>
+
+    <script id="contentLiveExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center; margin-right: 6px;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front poster">
+                            {{#if this.poster.url}}
+                            <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                            {{else}}
+                            <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                            {{/if}}
+                            <div class="poster__overlay">
+                                <div class="btn btn-outline-light w-50 custom-outline-btn_small"  style="z-index: 99;">
+                                    {{#if this.poster.url}}
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Live" 
+                                        data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" 
+                                        data-episode-app="{{dvr.application}}" data-episode-stream-key="{{dvr.stream_key}}"
+                                        data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                    {{else}}
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Live" data-episode-title="{{{name}}}" 
+                                        data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}"
+                                        data-episode-app="{{dvr.application}}" data-episode-stream-key="{{dvr.stream_key}}" 
+                                        data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                    {{/if}}
+                                </div>
+                                <div style="top:5px;">
+                                    <h5>{{name}}</h5>
+                                    <p style="line-height: 1;"><small>{{description}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+
+    <script>
+        function displayLiveEpisodes(series) {
+
+            const timeElapsed = Date.now();
+            const today = new Date(timeElapsed);
+
+            var apiLiveEpisodeRequest = new XMLHttpRequest();
+            apiLiveEpisodeRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes?_sort=id:DESC&channel_slug_ne=afriforumtv&_where[_or][0][stream_type.type]=live&_where[_or][1][stream_type.type]=Live-to-VOD&date_event=' + today.toISOString() + '&_limit=1000');
+            apiLiveEpisodeRequest.onload = function() {
+                if (apiLiveEpisodeRequest.status >= 200 && apiLiveEpisodeRequest.status < 400) {
+
+                    dataLiveEpisode = JSON.parse(apiLiveEpisodeRequest.responseText);
+                    console.log(dataLiveEpisode);
+                    console.log(Object.keys(dataLiveEpisode).length);
+
+                    if (Object.keys(dataLiveEpisode).length==0){
+                        document.getElementById("live_swiper").innerHTML = "";
+                        document.getElementById("row_live_swiper").innerHTML = "";
+                    } else {
+                        createLiveEpisodeSlider(dataLiveEpisode);
+                    }
+
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiLiveEpisodeRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiLiveEpisodeRequest.send();
+
+            function createLiveEpisodeSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawLiveEpisodeSliderTemplate = document.getElementById("contentLiveSlider").innerHTML;
+                var rawLiveEpisodeExpandTemplate = document.getElementById("contentLiveExpand").innerHTML;
+
+                var compiledLiveEpisodeSliderTemplate = Handlebars.compile(rawLiveEpisodeSliderTemplate);
+                var compiledLiveEpisodeExpandTemplate = Handlebars.compile(rawLiveEpisodeExpandTemplate);
+
+                var ourGeneratedLiveEpisodeSlider = compiledLiveEpisodeSliderTemplate(contentData);
+                var ourGeneratedLiveEpisodeExpand = compiledLiveEpisodeExpandTemplate(contentData);
+
+                var contentLiveEpisodeSliderContainer = document.getElementById("live_swiper");
+                var contentLiveEpisodeExpandContainer = document.getElementById("video-live-expand_0");
+
+                contentLiveEpisodeSliderContainer.innerHTML = ourGeneratedLiveEpisodeSlider;
+                contentLiveEpisodeExpandContainer.innerHTML = ourGeneratedLiveEpisodeExpand;
+
+                // init slider
+                const live_swiper = new Swiper('.video-slider-live', {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    freeMode: true,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        // el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            }
+
+        }
+        displayLiveEpisodes(mainChannel);
+
+
+        Handlebars.registerHelper("checkdate", function (start_date, options) {
+            'use strict';
+
+            let currentDate = new Date();
+            let time = (currentDate.getHours()+24) + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+            console.log(time);
+
+            if (start_date == time) {
+                return options(this);
+            }
+            return options.inverse(this);
+        });
+    </script>
+
+    <script id="contentEpisodeSlider" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                <div class="swiper-slide slider-wrapper mr-3" style="width: 300px;">
+                    {{#if this.poster.url}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                    {{else}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                    {{/if}}
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small" style="z-index: 99;">
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Featured" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                            </div>
+
+                            <div class="back-img-overlay-text" style="top:5px;">
+                                <h5>{{name}}</h5>
+                                <p style="line-height: 1;"><small>{{description}}</small></p>
+                            </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+
+    </script>
+
+    <script id="contentEpisodeExpand" type="text/x-handlebars-template">
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front poster">
+                            {{#if this.poster.url}}
+                            <img class="front-img" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                            {{else}}
+                            <img class="front-img" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                            {{/if}}
+                            <div class="poster__overlay">
+                                <div class="btn btn-outline-light w-50 custom-outline-btn_small"  style="z-index: 99;">
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Featured" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                </div>
+
+                                <div style="top:5px;">
+                                    <h5>{{name}}</h5>
+                                    <p style="line-height: 1;"><small>{{description}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+
+    <script>
+        function displayEpisodes(series) {
+            var apiEpisodeRequest = new XMLHttpRequest();
+            apiEpisodeRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes?_sort=published_at:DESC&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&' + series + '&_limit=1000');
+            apiEpisodeRequest.onload = function() {
+                if (apiEpisodeRequest.status >= 200 && apiEpisodeRequest.status < 400) {
+
+                    dataEpisode = JSON.parse(apiEpisodeRequest.responseText);
+
+                    console.log(dataEpisode);
+                    console.log(Object.keys(dataEpisode).length);
+                    if (Object.keys(dataEpisode).length==0){
+                        alert('no content');
+
+                        const urlParams = new URLSearchParams(window.location.search);
+
+                        urlParams.set('order', 'date');
+
+                        var temp = urlParams;
+                    } else {
+                        createEpisodeSlider(dataEpisode);
+                    }
+
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiEpisodeRequest.onerror = function() {
+            console.log("Connection error");
+            };
+
+            apiEpisodeRequest.send();
+
+            function createEpisodeSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawEpisodeSliderTemplate = document.getElementById("contentEpisodeSlider").innerHTML;
+                var rawEpisodeExpandTemplate = document.getElementById("contentEpisodeExpand").innerHTML;
+
+                var compiledEpisodeSliderTemplate = Handlebars.compile(rawEpisodeSliderTemplate);
+                var compiledEpisodeExpandTemplate = Handlebars.compile(rawEpisodeExpandTemplate);
+
+                var ourGeneratedEpisodeSlider = compiledEpisodeSliderTemplate(contentData);
+                var ourGeneratedEpisodeExpand = compiledEpisodeExpandTemplate(contentData);
+
+                var contentEpisodeSliderContainer = document.getElementById("video_swiper");
+                var contentEpisodeExpandContainer = document.getElementById("video-expand_0");
+
+                contentEpisodeSliderContainer.innerHTML = ourGeneratedEpisodeSlider;
+                contentEpisodeExpandContainer.innerHTML = ourGeneratedEpisodeExpand;
+
+                // init slider
+                const swiper3 = new Swiper('.video-slider1', {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    freeMode: true,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        // el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+            }
+
+        }
+    </script>
+
+    <script id="contentFeaturedSlider" type="text/x-handlebars-template">
+        <div class="swiper-wrapper">
+            {{#each this}}
+                <div class="swiper-slide slider-wrapper mr-3" style="width: 300px;">
+                    {{#if this.poster.url}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                    {{else}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                    {{/if}}
+                    <div class="poster__overlay">
+                        <div class="btn btn-outline-light w-50 custom-outline-btn_small "  style="z-index: 99;">
+                            <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Featured" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                        </div>
+
+                        <div class="back-img-overlay-text" style="top:5px;">
+                            <h5>{{name}}</h5>
+                            <p style="line-height: 1;"><small>{{description}}</small></p>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+
+    </script>
+
+
+    <script id="contentFeaturedExpand" type="text/x-handlebars-template">
+        {{setVar "channel1" channel}}
+        {{#each this}}
+            <div class="col" style="text-align: -webkit-center; margin-right: 1px;">
+                <div class="flip-card mb-3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front poster">
+                        {{#if this.poster.url}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za:1339{{this.poster.url}}" alt="{{name}}">
+                    {{else}}
+                    <img class="video-poster" src="https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.png" onerror="this.onerror=null; this.src='https://tv.digicentral.co.za/assets/thumb_thumbs/{{this.file_name_base}}.jpg'" alt="{{name}}">
+                    {{/if}}
+                            <div class="poster__overlay">
+                                <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" location_selected="Featured" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+
+                                </div>
+
+                                <div style="top:5px;">
+                                    <h5>{{name}}</h5>
+                                    <p style="line-height: 1;"><small>{{description}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </script>
+
+    <script>
+        function displayEpisodesLatest(channel) {
+
+            var apiSeasonRequest = new XMLHttpRequest();
+            current_channel = sessionStorage.getItem("channel");
+
+            apiSeasonRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes/?features.slug=promo-digi-tv&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&_limit=1000');
+
+            apiSeasonRequest.onload = function() {
+                if (apiSeasonRequest.status >= 200 && apiSeasonRequest.status < 400) {
+                    dataSeason = JSON.parse(apiSeasonRequest.responseText);
+
+                    if(video != ""){
+                        var selectedEpisode = dataSeason.filter(x => x.slug == video)[0];
+
+                        if(selectedEpisode){
+                                showEpisodeFromUrl(selectedEpisode);
+                        } else {
+                            var selectedEpisode = dataLiveEpisode.filter(x => x.slug == video)[0];
+                            if(selectedEpisode){
+                                showEpisodeFromUrl(selectedEpisode);
+                            } else {
+                                // updateURLHomeNoVideo();
+                            }
+                        }
+                    }
+
+                    console.log(dataSeason);
+                    createSeasonSlider(dataSeason);
+                } else {
+                    console.log("We connected to the server, but it returned an error.");
+                }
+            };
+
+            apiSeasonRequest.onerror = function() {
+                console.log("Connection error");
+            };
+
+            apiSeasonRequest.send();
+
+            function createSeasonSlider(contentData){
+
+                contentData.forEach(element => {
+                    if(element.poster){
+                        if(element.poster.url.includes("/uploads")){
+                            element.poster.url = element.poster.url.replace('/uploads', '/thumb_uploads');
+                        } else if (element.poster.url.includes("/thumbs")){
+                            element.poster.url = element.poster.url.replace('/thumbs', '/thumb_thumbs');
+                        }
+                    }
+                });
+
+                var rawSliderTemplate = document.getElementById("contentFeaturedSlider").innerHTML;
+                var rawExpandTemplate = document.getElementById("contentFeaturedExpand").innerHTML;
+
+                var compiledSliderTemplate = Handlebars.compile(rawSliderTemplate);
+                var compiledExpandTemplate = Handlebars.compile(rawExpandTemplate);
+
+                var ourGeneratedSlider = compiledSliderTemplate(contentData);
+                var ourGeneratedExpand = compiledExpandTemplate(contentData);
+
+
+                var contentSliderContainer = document.getElementById("video_swiper");
+                var contentExpandContainer = document.getElementById("video-expand_0");
+
+                contentSliderContainer.innerHTML = ourGeneratedSlider;
+                contentExpandContainer.innerHTML = ourGeneratedExpand;
+
+                const swiper1 = new Swiper('.video-slider1', {
+
+                    direction: 'horizontal',
+                    loop: false,
+                    slidesPerView: "auto",
+                    spaceBetween: 15,
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                });
+
+            }
+
+        }
+        displayEpisodesLatest('platform');
+    </script>
+
+    <script>
+
+        Handlebars.registerHelper( "when",function(operand_1, operator, operand_2, options) {
+          var operators = {
+           'eq': function(l,r) { return l == r; },
+           'noteq': function(l,r) { return l != r; },
+           'gt': function(l,r) { return Number(l) > Number(r); },
+           'or': function(l,r) { return l || r; },
+           'and': function(l,r) { return l && r; },
+           '%': function(l,r) { return (l % r) === 0; }
+          }
+          , result = operators[operator](operand_1,operand_2);
+
+          if (result) return options.fn(this);
+          else  return options.inverse(this);
+        });
+
+        Handlebars.registerHelper("setVar", function(varName, varValue, options) {
+        options.data.root[varName] = varValue;
+        });
+
+        function selectCategory(series,title,banner,poster,redirect_url){
+            if(redirect_url){
+                location.href = redirect_url;
+            } else {
+
+                channel = sessionStorage.getItem('channel');
+                document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="~/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
+                console.log('channel: ' + channel + ' ' + series);
+                document.getElementById('episodes-title').innerHTML = 'Latest ' + title.toUpperCase();
+                document.getElementById('header-banner-img').src = 'https://tv.digicentral.co.za:1339' + banner;
+                displayEpisodes('categories.slug=' + series);
+                displaySubCategory(series);
+                displaySery(series);
+            }
+        }
+
+        function selectSeries(season, title, banner){
+            channel = sessionStorage.getItem('channel');
+            document.getElementById('episodes-title').innerHTML = title;
+            document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="~/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
+            if(banner){
+                document.getElementById('header-banner-img').src = 'https://tv.digicentral.co.za:1339' + banner;
+            }
+            console.log('channel: ' + channel + ' ' + season);
+            displayEpisodes(season);
+        }
+
+
+    </script>
+
+<script id="contentChannelAssets" type="text/x-handlebars-template">
+    {{#each movie}}
+    sessionStorage.setItem("channel", channel);
+    {{/each}}
+</script>
+
+<script>
+
+    function updateChannelAssets(channel){
+
+        var apiChannelDetailRequest = new XMLHttpRequest();
+        apiChannelDetailRequest.open('GET', 'https://tv.digicentral.co.za:1339/channels/?slug=' + channel);
+        apiChannelDetailRequest.onload = function() {
+            if (apiChannelDetailRequest.status >= 200 && apiChannelDetailRequest.status < 400) {
+                var dataChannelDetail = JSON.parse(apiChannelDetailRequest.responseText);
+                console.log(dataChannelDetail);
+                document.getElementById('header-banner-img').src = 'https://tv.digicentral.co.za:1339' + dataChannelDetail[0].banner.url;
+                
+                document.getElementById('side_channel').innerHTML = '<strong>' + dataChannelDetail[0].name + '</strong>';
+
+            } else {
+                console.log("We connected to the server, but it returned an error.");
+            }
+        };
+
+        apiChannelDetailRequest.onerror = function() {
+            console.log("Connection error");
+        };
+
+        apiChannelDetailRequest.send();
+
+        $("#main-digi-logo-container").hide();
+
+    }
+
+
+        function selectChannel(channel,url){
+
+            if(channel == 'redirect'){
+                location.href = url;
+            } else {
+                console.log(channel);
+                updateChannelAssets(channel);
+                displayCategories(channel);
+                displaySubChannel(channel);
+                displayOtherChannel(channel);
+            }
+        }
+
+        function selectSubChannel(url){
+            location.href = url;
+        }
+
+    selectChannel('digi-tv');
+
+</script>
+
+<!-- Modal -->
+<div class="modal fade" id="modalEpisodeDisplay" role="dialog">
+  <div class="modal-dialog  modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body" style="background-color:#000000">
+          <div class="row justify-content-center">
+            <div id="player" class="theoplayer-container video-js theoplayer-skin vjs-fluid"></div>
+          </div>
+      </div>
+    </div>
+    <script>
+
+
+    </script>
+  </div>
+</div>
+
+<script>
+
+var player = 'player1';
+
+        var element = document.querySelector(".theoplayer-container");
+        var player = new THEOplayer.Player(element, {
+            libraryLocation: "https://cdn.myth.theoplayer.com/c5a9246b-9800-4534-86e4-dc70f15431a0",
+            license: "sZP7IYe6T6PlIQCo3S3gIOkl0LfiFSaz3u0-TSI13mkeCDXl0SIl3oBz0u56FOPlUY3zWokgbgjNIOf9fK363u3K3LPeFS113uC-3uekTOk13lR_FSh_3Kfr0SbL0ofkImfVfK4_bQgZCYxNWoryIQXzImf90SCL0ShZ3Lfi0u5i0Oi6Io4pIYP1UQgqWgjeCYxgflEc3lfkTSer3SBi3lCtFOPeWok1dDrLYtA1Ioh6TgV6v6fVfKcqCoXVdQjLUOfVfGxEIDjiWQXrIYfpCoj-fgzVfKxqWDXNWG3ybojkbK3gflNWf6E6FOPVWo31WQ1qbta6FOPzdQ4qbQc1sD4ZFK3qWmPUFOPLIQ-LflNWfK1zWDikfgzVfG3gWKxydDkibK4LbogqW6f9UwPkIYz",
+            ui: {
+                width: "570px",
+                height: "320px",
+            }
+        });
+
+        function showEpisode(episode) {
+
+            var episode_id = episode.getAttribute("id");
+            var episode_slug = episode.getAttribute("slug");
+            var episode_title = episode.getAttribute("data-episode-title");
+            var episode_location_selected = episode.getAttribute("location_selected");
+            var episode_src = episode.getAttribute("data-episode-embed");
+            var episode_title = episode.getAttribute("data-episode-title");
+            var episode_story = episode.getAttribute("data-episode-story");
+            var episode_poster = episode.getAttribute("data-episode-poster");
+            var episode_hash = episode.getAttribute("data-file-hash");
+            var episode_path = episode.getAttribute("data-episode-path");
+            var episode_filename = episode.getAttribute("data-file-name");
+            var stream_app = episode.getAttribute("data-episode-app");
+            var stream_key = episode.getAttribute("data-episode-stream-key");
+            var epochStart = ((new Date(episode.getAttribute("data-episode-start-time"))).getTime()) /1000;
+            var epochEnd = ((new Date(episode.getAttribute("data-episode-end-time"))).getTime()) /1000;
+            console.log(epochEnd);
+            var duration = epochEnd - epochStart;
+
+            gtag('event', 'video_play', {
+                'video_id' : episode_id,
+                'video_slug' : episode_slug,
+                'video_title' : episode_title,
+                'video_channel' : "Digi-TV",
+                'video_location_selected' : episode_location_selected,
+                "video_environment" : phpEnvironment
+            });
+
+            player.autoplay = true;
+            player.source = getSource(episode_src, episode_poster, episode_filename, episode_hash, episode_path, stream_app, stream_key, epochStart, duration);
+            console.log(player.source);
+
+            var linkForShare = urlDomain
+            + '/' + mainChannel
+            + '/' + episode.getAttribute("slug");
+        
+            player.social.url = linkForShare;
+            player.social.items = [
+                {
+                    label : 'Facebook',
+                    icon : '//cdn2.hubspot.net/hubfs/2163521/Demo_zone/f_logo_RGB-Blue_58.png',
+                    src : '//www.facebook.com/sharer/sharer.php?u=<URL>'
+                }, {
+                    label : 'WhatsApp',
+                    icon : 'https://th.bing.com/th/id/R.18ba0e411b1586feb65e97d7deb45b5d?rik=OCbvCEPQbXn47g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fwhatsapp-png-whatsapp-logo-png-1000.png&ehk=7BIVvksu2ccZPkUkoiU9T8Gx7a6xEIJ61o%2fGGN12nNM%3d&risl=&pid=ImgRaw&r=0',
+                    src : '//api.whatsapp.com/send?text=<URL>'
+                }, {
+                    label : 'Twitter',
+                    icon : '//cdn2.hubspot.net/hubfs/2163521/Demo_zone/Twitter_Social_Icon_Circle_Color_56.png',
+                    src : '//twitter.com/intent/tweet?url=<URL>'
+                }, {
+                    label : 'Linkedin',
+                    icon : 'https://th.bing.com/th/id/R.d86a02cea4314ad84a6f8562d888daba?rik=TO6LDzz49eXNfA&riu=http%3a%2f%2fvaguard.dodlive.mil%2ffiles%2f2014%2f11%2flinkedIn-logo.png&ehk=IrF0YjZcrs%2bhx4qora%2fEqKbNsO%2bT8xp9sMiVx2uuEbg%3d&risl=&pid=ImgRaw&r=0',
+                    src : '//www.linkedin.com/sharing/share-offsite/?url=<URL>'
+                }, {
+                //     label : 'Pinterest',
+                //     icon : 'https://cdn.freebiesupply.com/logos/large/2x/pinterest-1-logo-png-transparent.png',
+                //     src : '//za.pinterest.com/pin/create/button/?url=<URL>'
+                // }, {
+                    label : 'Direct link:',
+                    src : linkForShare,
+                }
+                // , {
+                //     label : 'Embed',
+                //     text : '<iframe width="640" height="360" src="https://demo.theoplayer.com/social-sharing" frameborder="0" allowfullscreen>\n</iframe>',
+                // }
+            ];    
+
+            $("#story").text(episode_story);
+            $("#modalEpisodeDisplayLabel").text(episode_title);
+            $("#modalEpisodeDisplay").modal("show");
+
+            updateURLHomeVideo(episode.getAttribute("slug"))
+        }
+
+        $("#modalEpisodeDisplay").on('hidden.bs.modal', function (e) {
+            updateURLHomeNoVideo();
+            player.pause();
+        });
+
+        function showEpisodeFromUrl(episode) { 
+
+            var episode_id = episode.id;
+            var episode_src = "https://tv.digicentral.co.za:8082/content/" + episode.file_path;
+            var episode_title = episode.name;
+            var episode_story = episode.description;
+            var episode_poster = episode.poster ? episode.poster.url : null;
+
+            var episode_hash = episode.video ? episode.video.hash : 0;
+
+            var episode_path = episode.file_path ? episode.file_path : "";
+            var episode_filename = episode.file_name_base ? episode.file_name_base : "";
+
+            var stream_app = episode.dvr ? episode.dvr.application : 0;
+            var stream_key = episode.dvr ? episode.dvr.stream_key : 0;
+            var epochStart = episode.start_time ? ((new Date(episode.start_time)).getTime()) /1000 : 0;
+            var epochEnd = episode.end_time ? ((new Date(episode.end_time)).getTime()) /1000: 0;
+
+            gtag('event', 'video_play', {
+                'video_id' : episode_id,
+                'video_slug' : episode_slug,
+                'video_title' : episode_title,
+                'video_channel' : "Digi-TV",
+                'video_location_selected' : "URL",
+                "video_environment" : phpEnvironment
+            });
+
+            // console.log('hash ' + episode_hash);
+            console.log(epochEnd);
+            var duration = epochEnd - epochStart;
+    
+            player.autoplay = true;
+            player.source = getSource(episode_src, episode_poster, episode_filename, episode_hash, episode_path, stream_app, stream_key, epochStart, duration);
+            console.log(player.source);
+
+            var linkForShare = urlDomain
+            + '/' + mainChannel
+            + '/' + episode.slug;
+
+            player.social.url = linkForShare;
+            player.social.items = [
+                {
+                    label : 'Facebook',
+                    icon : '//cdn2.hubspot.net/hubfs/2163521/Demo_zone/f_logo_RGB-Blue_58.png',
+                    src : '//www.facebook.com/sharer/sharer.php?u=<URL>'
+                }, {
+                    label : 'WhatsApp',
+                    icon : 'https://th.bing.com/th/id/R.18ba0e411b1586feb65e97d7deb45b5d?rik=OCbvCEPQbXn47g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fwhatsapp-png-whatsapp-logo-png-1000.png&ehk=7BIVvksu2ccZPkUkoiU9T8Gx7a6xEIJ61o%2fGGN12nNM%3d&risl=&pid=ImgRaw&r=0',
+                    src : '//api.whatsapp.com/send?text=<URL>'
+                }, {
+                    label : 'Twitter',
+                    icon : '//cdn2.hubspot.net/hubfs/2163521/Demo_zone/Twitter_Social_Icon_Circle_Color_56.png',
+                    src : '//twitter.com/intent/tweet?url=<URL>'
+                }, {
+                    label : 'Linkedin',
+                    icon : 'https://th.bing.com/th/id/R.d86a02cea4314ad84a6f8562d888daba?rik=TO6LDzz49eXNfA&riu=http%3a%2f%2fvaguard.dodlive.mil%2ffiles%2f2014%2f11%2flinkedIn-logo.png&ehk=IrF0YjZcrs%2bhx4qora%2fEqKbNsO%2bT8xp9sMiVx2uuEbg%3d&risl=&pid=ImgRaw&r=0',
+                    src : '//www.linkedin.com/sharing/share-offsite/?url=<URL>'
+                }, {
+                //     label : 'Pinterest',
+                //     icon : 'https://cdn.freebiesupply.com/logos/large/2x/pinterest-1-logo-png-transparent.png',
+                //     src : '//za.pinterest.com/pin/create/button/?url=<URL>'
+                // }, {
+                    label : 'Direct link',
+                    src : linkForShare,
+                }
+                // , {
+                //     label : 'Embed',
+                //     text : '<iframe width="640" height="360" src="https://demo.theoplayer.com/social-sharing" frameborder="0" allowfullscreen>\n</iframe>',
+                // }
+        ];        
+
+            $("#story").text(episode_story);
+            $("#modalEpisodeDisplayLabel").text(episode_title);
+            $("#modalEpisodeDisplay").modal("show");
+
+            sessionStorage.setItem("video", episode.slug);
+
+            updateURLHomeVideo(episode.slug);
+        }
+    
+    function updateURLHomeVideo(slug) { 
+
+        myNewURL = urlDomain + "/digi-tv/" + slug;  
+
+        window.history.pushState("video", "video", myNewURL);  
+    }
+
+    function updateURLHomeNoVideo() { 
+
+        myNewURL = urlDomain;  
+    
+        window.history.pushState("home", "home", myNewURL);  
+    }
+
+    function getSource(episode_src, episode_poster, episode_filename, episode_hash, episode_path, app, stream_key, start_time, duration) {
+        console.log('hash ' + episode_hash);
+        if(episode_hash){
+            return {
+                sources: [{
+                    type : 'application/x-mpegurl',
+                    src: 'https://tv.digicentral.co.za:8082/digitv/' + episode_hash + '.mp4/playlist.m3u8'
+                    // src: episode_src + '/smil:' + episode_filename + '.smil/playlist.m3u8'
+                }],
+                poster: 'https://tv.digicentral.co.za:1339' + episode_poster,
+
+            };
+        } else if (episode_path){
+            return {
+                    sources: [{
+                        type : 'application/x-mpegurl',
+                        // src: episode_src + '.mp4/playlist.m3u8'
+                        src: 'https://tv.digicentral.co.za:8082/content/' + episode_path + '/smil:' + episode_filename + '.smil/playlist.m3u8'
+                        // src: 'https://stream.digitv.co.za/stream/auto/hls/' + stream_key + '/index.m3u8'
+                    }],
+                    poster: 'https://tv.digicentral.co.za:1339' + episode_poster,
+
+            };
+        } else {
+            return {
+
+                    sources: [{
+                        // "src": "https://tv.digicentral.co.za:8082/" + app + "/" + stream_key + "/playlist_dvr_range-" + start_time + "-" + duration + ".m3u8",
+                        "src": "https://stream.digitv.co.za/stream/auto/hls/" + stream_key + "/index.m3u8",
+                        "type": "application/x-mpegurl",
+                        "lowLatency": false
+                    }],
+                    poster: "https://tv.digicentral.co.za:1339" + episode_poster
+
+            };
+        }
+    }
+
+
+    function playMessage(start_time) {
+        var result;
+        result = 'Play1';
+        document.write (result );
+    }
+
+</script>
+
+    <script type="text/javascript" src="~/js/main_index.js"></script>
+
+</body>
+
+</html>
+
