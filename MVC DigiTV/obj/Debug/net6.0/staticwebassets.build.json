@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/dWimllVrT0W0PFVuFp3hRAnyGLg/x31xCwwRS8JAOU=",
+  "Hash": "rk35K8awbHvlHFC35UtWtO0slXi4fFE7TMj4PWPc80A=",
   "Source": "MVC DigiTV",
   "BasePath": "_content/MVC DigiTV",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MVC DigiTV\\wwwroot",
       "Source": "MVC DigiTV",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC DigiTV.styles.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC DigiTV.styles.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "MVC DigiTV.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC DigiTV.styles.css"
+      "OriginalItemSpec": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MVC DigiTV.styles.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC DigiTV.bundle.scp.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC DigiTV.bundle.scp.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "MVC DigiTV.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC DigiTV.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Projects\\mvcdigi\\MVC DigiTV\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MVC DigiTV.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\_purejscarousel.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\_purejscarousel.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/_purejscarousel.scss",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\_purejscarousel.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\_variables.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\_variables.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/_variables.scss",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\_variables.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\enrico_main.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\enrico_main.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/enrico_main.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\enrico_main.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/enrico_scss_main.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\enrico_scss_main.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/enrico_scss_main.css.map",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\enrico_scss_main.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\enrico_scss_main.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/enrico_scss_main.scss",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\enrico_scss_main.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\glider_style.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\glider_style.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/glider_style.css",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\glider_style.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\home.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\home.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/home.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\home.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\home.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/home.css.map",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\home.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\home.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/home.scss",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\home.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main.css.map",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main.scss",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main_3.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main_3.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main_3.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main_3.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main_3.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main_3.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main_3.css.map",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main_3.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\css\\main_3.scss",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\css\\main_3.scss",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "css/main_3.scss",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main_3.scss"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\favicon.ico",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\50_white_logo_small.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\50_white_logo_small.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/50_white_logo_small.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\50_white_logo_small.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\behind_the_scenes.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\behind_the_scenes.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/behind_the_scenes.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\behind_the_scenes.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\blank.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\blank.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/blank.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blank.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\blank_210.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\blank_210.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/blank_210.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\blank_210.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_AD_banner.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_AD_banner.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_AD_banner.jpg",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_AD_banner.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_banner.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_banner.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_banner.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_banner.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_banner_.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_banner_.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_banner_.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_banner_.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_channel_poster.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_channel_poster.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_channel_poster.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_channel_poster.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_header.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_header.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_header.jpg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_header.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_home.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_home.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_home.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_home.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_test.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_test.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_test.jpg",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_test.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_video_poster.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_image_master_video_poster.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_image_master_video_poster.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_image_master_video_poster.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv_logo.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv_logo.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv_logo.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv_logo.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\digitv-logo-color.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\digitv-logo-color.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/digitv-logo-color.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\images\\digitv-logo-color.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\favicon-32x32.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\favicon-32x32.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/favicon-32x32.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\images\\favicon-32x32.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\flat_digitv_logo.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\flat_digitv_logo.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/flat_digitv_logo.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\images\\flat_digitv_logo.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\gauteng__.jpg",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\gauteng__.jpg",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/gauteng__.jpg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gauteng__.jpg"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\light_digitv_logo.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\light_digitv_logo.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/light_digitv_logo.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\light_digitv_logo.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\rugby-poster.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\rugby-poster.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/rugby-poster.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\rugby-poster.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\texture.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\texture.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/texture.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\images\\texture.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\texture-flipped.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\texture-flipped.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/texture-flipped.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\texture-flipped.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\images\\white_logo_small.png",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\images\\white_logo_small.png",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "images/white_logo_small.png",
       "AssetKind": "All",
@@ -714,10 +714,27 @@
       "OriginalItemSpec": "wwwroot\\images\\white_logo_small.png"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\js\\Clider.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
+      "BasePath": "_content/MVC DigiTV",
+      "RelativePath": "js/Clider.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Clider.js"
+    },
+    {
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\js\\main.js",
+      "SourceId": "MVC DigiTV",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\js\\main_index.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\js\\main_index.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "js/main_index.js",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main_index.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\js\\purejscarousel.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\js\\purejscarousel.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "js/purejscarousel.js",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\js\\purejscarousel.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\js\\site.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "MVC DigiTV",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\enric\\Desktop\\MVC TEST\\MVC DigiTV\\MVC DigiTV\\wwwroot\\",
+      "ContentRoot": "C:\\Projects\\mvcdigi\\MVC DigiTV\\wwwroot\\",
       "BasePath": "_content/MVC DigiTV",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

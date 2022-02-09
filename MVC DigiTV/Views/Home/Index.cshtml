@@ -4,6 +4,15 @@
 }
 
 <head>
+    <title>DigiTV</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Syahrizaldev"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css'>
+    <meta property="twitter:card"                           content="summary_large_image">
+
+    <meta property="og:type"                                content="website" />
+    <meta property="fb:app_id"                              content="2390915184372197" />
 
     <link rel="stylesheet" href="~/css/glider_style.css">
 
@@ -33,14 +42,29 @@
 
     <!-- First scripts to run -->
     <script>
-        var dataSeason = []; 
-        var dataLiveEpisode = []; 
-        var dataEpisode = [];
+        dataSeason = []; 
+        dataLiveEpisode = []; 
+        dataEpisode = [];
 
-        var mainChannel = "digi-tv";
-        var urlDomain = "http://localhost";
-        var video = "";
-        var dateTime = "2022-01-28T06:44:17Z";
+        // if("<?php echo $video?>" != ""){
+        //     myNewURL = "<?php echo $urlDomain?>" + "/digi-tv/" + "<?php echo $video?>";  
+        //     window.history.pushState("video", "video", myNewURL);
+        // }else{
+        //     myNewURL = "<?php echo $urlDomain?>";
+        //     window.history.pushState("home", "home", myNewURL);
+        // }
+
+        debugger
+
+        var today = new Date();
+
+        var dateTime = today.getFullYear() + '-' + ("0" + (today.getMonth() + 1)).slice(-2) + '-' + ("0" + (today.getDate() + 1)).slice(-2) + 'T' + ("0" + (today.getHours() + 1)).slice(-2) 
+            + ":" + ("0" + (today.getMinutes() + 1)).slice(-2) + ":" + ("0" + (today.getSeconds() + 1)).slice(-2) + ".000Z";
+
+        var urlDomain = window.location.host;
+
+        var globalChannel = "digi-tv";
+
     </script>
 
     <!-- JQuery & Bootstrap CDN -->
@@ -52,6 +76,7 @@
     <!-- PureJS Carousel -->
     <script src="~/js/purejscarousel.js"></script>
 
+
     <!-- Chromecast SDK -->
     <script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
 
@@ -62,6 +87,8 @@
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
 
+    <!-- Clider -->
+    <script src="~/js/Clider.js"></script>
 
     <!-- THEOplayer library and css -->
     <script type="text/javascript" src="https://cdn.myth.theoplayer.com/c5a9246b-9800-4534-86e4-dc70f15431a0/THEOplayer.js"></script>
@@ -161,6 +188,7 @@
             border-radius: 13px;
             z-index: 1;
         }
+
     </style>
 
 </head>
@@ -272,7 +300,7 @@
 
                     <!-- videos & ads -->
 
-                    <div class="row">
+                    <div class="row" style="padding-top: 5px;">
                         <div class="col w-100 live-video-row" id="row_live_swiper">
                             <div class="row flex">
                                 <div id="video-title-row" class="col-xl-9 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center flex" style="font-size: 28px;" >
@@ -420,7 +448,7 @@
                         <!-- POSTER END -->
 
                         <!-- sub-category_sliders -->
-                       
+                        
                         <div id="sub_categories"></div>
                         
                         <!-- series_sliders -->
@@ -543,7 +571,7 @@
 
     <!-- for sidenav -->
     <template id="dynamic-channels">
-        <div class="card channel-container-card" onclick="changeChannelFromList( 'http://localhost', '{{option.channel_slug}}')">
+        <div class="card channel-container-card" onclick="changeChannelFromList( '<?php echo $urlDomain?>', '{{option.channel_slug}}')">
             <div class="card-header" id="channel_{{index}}">
                 <h5 class="mb-0">
                     <button id="channel-btn_{{index}}" class="btn w-100 text-right" type="button" data-toggle="collapse"
@@ -567,7 +595,7 @@
     <template id="dynamic-channel-options">
         <div >
 
-            <div onclick="changeChannelCategoryFromList( 'http://localhost', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
+            <div onclick="changeChannelCategoryFromList( '<?php echo $urlDomain?>', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
 
             <z>{{option.name}} </z>
             </div>
@@ -577,7 +605,7 @@
 
     <!-- for channel modal -->
     <template id="dynamic-channels_popup">
-        <div class="card channel-container-card" onclick="changeChannelFromList( 'http://localhost', '{{option.channel_slug}}')">
+        <div class="card channel-container-card" onclick="changeChannelFromList( '<?php echo $urlDomain?>', '{{option.channel_slug}}')">
             <div class="card-header" id="channel_{{index}}_popup">
                 <h5 class="mb-0">
                     <button id="channel-btn_{{index}}_popup" class="btn w-100 text-right" type="button" data-toggle="collapse"
@@ -599,7 +627,7 @@
     </template>
 
     <template id="dynamic-channel-options_popup">
-        <div onclick="changeChannelCategoryFromList( 'http://localhost', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
+        <div onclick="changeChannelCategoryFromList( '<?php echo $urlDomain?>', '{{option.channel_slug}}', '{{option.slug}}')" class="channel-option-btn" style="cursor: pointer;">
             <z>{{option.name}}</z>
         </div>
     </template>
@@ -607,21 +635,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
     <!-- display ads -->
-    <script id="adTemplate" type="text/x-handlebars-template">
+    <!-- <script id="adTemplate" type="text/x-handlebars-template">
             <div class="banner-advertisement-row my-3">
                 <div class="col w-100" style="padding-left: 0px; padding-top: 1rem;">
                     <div class="row">
                         {{#each this}}
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pb-3 left-advertisement" >
                                 <div class="banner-advertisement">
-                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url={{this.channel}}&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
+                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url=<?php echo $channel;?>&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
                                         <img src="{{this.ad_url}}" alt="Banner">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-12 flipping-advertisement">
+                            <div class="col-12 flipping-advertisement" style="padding-right: 0px;">
                                 <div class="flip-banner-advertisement banner-advertisement">
-                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url={{this.channel}}&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
+                                    <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url=<?php echo $channel;?>&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank">
                                         <img src="{{this.ad_url}}" alt="Banner">
                                     </a>
                                 </div>
@@ -630,16 +658,72 @@
                     </div>
                 </div>
             </div>
+    </script> -->
+    
+    <!-- display ads -->
+    <script id="adTemplate" type="text/x-handlebars-template">
+        <div class="full-ad-width">
+            <div class="col" style="padding-top: 1rem; width: 100%">
+                <div class="row row full-ad-height" style="justify-content: center">
+                {{#each this}}
+                        <div class="left-advertisement p-0">
+                            <div class="banner-advertisement banner-advertisement-desktop mr-3 pr-3 pb-3" id="desktop-add-{{index}}">
+                                <!-- <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url=<?php echo $channel;?>&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank"> -->
+                                    <!-- <img src="{{this.ad_url}}" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute">
+                                    <img src="https://provisual.online/sandbox/digi/images/ads/Digitv-Channel-Banner.png" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute">
+                                    <img src="https://provisual.online/sandbox/digi/images/ads/BDCE-Channel-Banner.png" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute"> -->
+
+
+                                    <ul class="adSlider-{{index}}">
+                                        <li><img src="{{this.ad_url}}" class="cube imageOfAdd cursor-pointer" onclick="goToAd('{{ad_redirect_url}}')" /></a></li>
+                                    </ul>
+
+
+                                <!-- </a> -->
+                            </div>
+                        </div>
+                        <div class="col-12 flipping-advertisement">
+                            <div class="flip-banner-advertisement banner-advertisement-desktop">
+                                <!-- <a href="https://provisual.online/sandbox/digi/ad_redirect.php?user_id=999&host_url=<?php echo $channel;?>&ad_id={{this.ad_id}}&ad_redirect_url={{this.ad_redirect_url}}" target="_blank"> -->
+
+                                    <ul class="adSlider-{{index}}">
+                                        <li><img src="{{this.ad_url}}" class="cube imageOfAdd cursor-pointer" onclick="goToAd('{{ad_redirect_url}}')" /></a></li>
+                                        <!-- <li><a href="cubeRandom"><img src="https://provisual.online/sandbox/digi/images/ads/Digitv-Channel-Banner.png" class="cube imageOfAdd" /></a></li>
+                                        <li><a href="block"><img src="https://provisual.online/sandbox/digi/images/ads/BDCE-Channel-Banner.png" class="cube imageOfAdd" /></a></li> -->
+                                    </ul>
+
+                                    <!-- <img src="{{this.ad_url}}" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute">
+                                    <img src="https://provisual.online/sandbox/digi/images/ads/Digicampus-Channel-Banner.png" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute">
+                                    <img src="https://provisual.online/sandbox/digi/images/ads/BDCE-Channel-Banner.png" alt="Banner" class="imageOfAdd test-{{index}}" style="position: absolute"> -->
+
+                                <!-- </a> -->
+                            </div>
+                        </div> 
+                    {{/each}}
+                </div>
+            </div>
+        </div>                     
     </script>
+
+
+
     <script>
 
         var apiDigiAdRequest = new XMLHttpRequest();
-        apiDigiAdRequest.open('GET', 'https://provisual.online/sandbox/digi/ad_serv.php?authToken=90900909&user_id=999&host_url=http://localhost&campaign=' + mainChannel + '-2021');
+        apiDigiAdRequest.open('GET', 'https://provisual.online/sandbox/digi/ad_serv_v2.php?authToken=90900909&user_id=999&host_url=localhost&campaign=' + globalChannel + '-2021');
         apiDigiAdRequest.onload = function() {
             if (apiDigiAdRequest.status >= 200 && apiDigiAdRequest.status < 400) {
                 // This is where we'll do something with the retrieved data
                 var data = JSON.parse(apiDigiAdRequest.responseText);
+
                 console.log(data);
+                var count = 1;
+
+                data.forEach(element => {
+                    element.index = count;
+                    count++;
+                });
+
                 createAd_HTML(data);
             } else {
                 console.log("We connected to the server, but it returned an error.");
@@ -668,7 +752,6 @@
         });
 
         function createAd_HTML(contentData){
-            debugger
             var rawTemplate = document.getElementById("adTemplate").innerHTML;
             var compiledTemplate = Handlebars.compile(rawTemplate);
             var ourGeneratedHTML = compiledTemplate(contentData);
@@ -676,6 +759,80 @@
             var contentContainer = document.getElementById("ad-container");
 
             contentContainer.innerHTML = ourGeneratedHTML;
+
+            contentData.forEach(element => {
+                gtag('event', 'display_ads', {
+                    'ad_id' : element.ad_id,
+                    'ad_redirect_url' : element.ad_redirect_url,
+                    'ad_url' : element.ad_url,
+                    "ad_environment" : urlDomain
+                });
+            });
+
+            var $containerWidth = $(window).width();
+
+            $(".desktop-add-3").css({"margin-right" : "0px"});
+
+            // if ($containerWidth <= 2200) {
+            // $(".addWithindex2").css({"display" : "none"});
+            // } else {
+            //     $(".addWithindex2").css({"display" : "flex"});
+            // }
+            
+            if($containerWidth <= 770){
+                // $(".addWithindex1").css({"display" : "none"});
+                // $(".full-ad-height").css({"height" : "310px"});
+                $("#margin-for-ads-mobile").css({"margin-bottom" : "3rem"});
+            } else {
+                // $(".addWithindex1").css({"display" : "flex"});
+                // $(".full-ad-height").css({"height" : "100%"});
+                $("#margin-for-ads-mobile").css({"margin-bottom" : "1rem"});
+            }
+            
+            if ($containerWidth <= 1101) {
+                $(".full-ad-width").css({"width" : "50%"});
+                $(".full-ad-height").css({"height" : "310px"});
+            } else {
+                $(".full-ad-width").css({"width" : "100%"});
+                $(".full-ad-height").css({"height" : "100%"});
+            }
+            
+            if ($containerWidth <= 1865) {
+                $(".imageOfAdd").css({"width" : "337.68px"});
+                $(".banner-advertisement-desktop").css({"width" : "337.68px"});
+                $(".imageOfAdd").css({"height" : "90.45px"});
+                $(".banner-advertisement-desktop").css({"height" : "90.45px"});
+            } else {
+                $(".imageOfAdd").css({"width" : "504px"});
+                $(".banner-advertisement-desktop").css({"width" : "504px"});
+                $(".imageOfAdd").css({"height" : "135px"});
+                $(".banner-advertisement-desktop").css({"height" : "135px"});
+            }
+
+            if ($containerWidth <= 1351 && $containerWidth >= 1281) {
+                $(".full-ad-width").css({"width" : "50%"});
+                $(".full-ad-height").css({"height" : "310px"});
+            }
+
+            
+            contentData.forEach(element => {
+                $(document).ready(function(){
+                    $('.adSlider-' + element.index).cycle({
+                        fx: 'fade', // here change effect to blindX, blindY, blindZ etc 
+                        speed: 'slow', 
+                        timeout: 10000 
+                    });
+                }); 
+            });
+        }
+        
+        function goToAd(adUrl){
+            gtag('event', 'ad_clicked', {
+                'ad_url' : adUrl,
+                "ad_environment" : urlDomain
+            });
+
+            location.href = adUrl;
         }
 
         Handlebars.registerHelper( "when",function(operand_1, operator, operand_2, options) {
@@ -703,7 +860,7 @@
                     <img class="category-poster" src="https://tv.digicentral.co.za:1339{{poster.formats.thumbnail.url}}" alt="{{name}}">
                     <div class="poster__overlay">
                         <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                            <div onclick="selectCategory('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                            <div onclick="selectCategory('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                         </div>
                     </div>
                 </div>
@@ -725,7 +882,7 @@
                             <img class="front-img" src="https://tv.digicentral.co.za:1339{{poster.formats.thumbnail.url}}" alt="{{name}}">
                             <div class="poster__overlay">
                                 <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                                    <div onclick="selectSeries('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                                    <div onclick="selectSeries('{{slug}}','{{name}}', '{{banner.url}}', '{{poster.url}}', '<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                                 </div>
                             </div>
                         </div>
@@ -949,7 +1106,7 @@
                         {{/if}}
                         <div class="poster__overlay">
                             <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                                <div onclick="selectSubChannel('<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                             </div>
                         </div>
                     </div>
@@ -972,7 +1129,7 @@
 
                         <div class="poster__overlay">
                             <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                                <div onclick="selectSubChannel('<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                             </div>
                         </div>
                     </div>
@@ -1074,7 +1231,7 @@
                         {{/if}}
                         <div class="poster__overlay">
                             <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                                <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                                <div onclick="selectSubChannel('<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                             </div>
                         </div>
                     </div>
@@ -1097,7 +1254,7 @@
 
                     <div class="poster__overlay">
                         <div class="btn btn-outline-light w-50 custom-outline-btn_small ">
-                            <div onclick="selectSubChannel('' + urlDomain + '/{{slug}}')"> EXPLORE </div>
+                            <div onclick="selectSubChannel('<?php echo $urlDomain?>/{{slug}}')"> EXPLORE </div>
                         </div>
                     </div>
                 </div>
@@ -1353,7 +1510,7 @@ function displayOtherChannel(channel_slug){
                     if(dataSeriesContent[0].series_episodes != 0){
 
                         var apiSeriesEpisodesRequest = new XMLHttpRequest();
-                        apiSeriesEpisodesRequest.open('GET', 'https://tv.digicentral.co.za:1339/series-episodes?_sort=name:ASC&content_sery.id=' + channel + '&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&_limit=1000");
+                        apiSeriesEpisodesRequest.open('GET', 'https://tv.digicentral.co.za:1339/series-episodes?_sort=name:ASC&content_sery.id=' + channel + "&_where[_or][0][go_public_at_lte]=" + dateTime + "&_where[_or][1][go_public_at_null]=true&_limit=1000");
                         apiSeriesEpisodesRequest.onload = function() {
                             if (apiSeriesEpisodesRequest.status >= 200 && apiSeriesEpisodesRequest.status < 400) {
                                 var dataSeriesEpisodes = JSON.parse(apiSeriesEpisodesRequest.responseText);
@@ -1519,7 +1676,9 @@ function displayOtherChannel(channel_slug){
                         {{/if}}
                         <div class="poster__overlay">
                             <div class="btn btn-outline-light w-50 custom-outline-btn_small" style="z-index: 99;">
-                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" style="line-height: 1; top:5px"> PLAY </div>
+                                    <div onclick="showEpisode(this)" id={{id}} data-episode-story="{{{description}}}" slug="{{{slug}}}" data-episode-title="{{{name}}}" data-episode-poster="{{poster.url}}" 
+                                        data-file-name="{{file_name_base}}" data-file-hash="{{video.hash}}" data-episode-path="{{file_path}}" data-episode-embed="https://tv.digicentral.co.za:8082/content/{{file_path}}" 
+                                        style="line-height: 1; top:5px"> PLAY </div>
                                 </div>
 
                                 <div class="back-img-overlay-text" style="top:5px;">
@@ -1538,6 +1697,7 @@ function displayOtherChannel(channel_slug){
 
     <script>
         function displaySubCategoryEpisodes(series, id) {
+    // echo 'series' .  series;
             var apiSubCategoryEpisodeRequest = new XMLHttpRequest();
             apiSubCategoryEpisodeRequest.open('GET', 'https://tv.digicentral.co.za:1339/sub-categories?_sort=name:ASC&slug=' + series);
             apiSubCategoryEpisodeRequest.onload = function() {
@@ -1841,7 +2001,8 @@ function displayOtherChannel(channel_slug){
             }
 
         }
-        displayLiveEpisodes(mainChannel);
+
+        displayLiveEpisodes(globalChannel);
 
 
         Handlebars.registerHelper("checkdate", function (start_date, options) {
@@ -2030,7 +2191,6 @@ function displayOtherChannel(channel_slug){
         <div class="swiper-scrollbar"></div>
         <div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next swiper-button-white"></div>
-
     </script>
 
 
@@ -2068,21 +2228,24 @@ function displayOtherChannel(channel_slug){
         function displayEpisodesLatest(channel) {
 
             var apiSeasonRequest = new XMLHttpRequest();
-            current_channel = sessionStorage.getItem("channel");
 
-            apiSeasonRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes/?features.slug=promo-digi-tv&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&_limit=1000');
+            debugger
+
+            apiSeasonRequest.open('GET', 'https://tv.digicentral.co.za:1339/episodes/?features.slug=promo-' + globalChannel + '&_where[_or][0][go_public_at_lte]=' + dateTime + '&_where[_or][1][go_public_at_null]=true&_limit=1000');
 
             apiSeasonRequest.onload = function() {
                 if (apiSeasonRequest.status >= 200 && apiSeasonRequest.status < 400) {
                     dataSeason = JSON.parse(apiSeasonRequest.responseText);
 
-                    if(video != ""){
-                        var selectedEpisode = dataSeason.filter(x => x.slug == video)[0];
+                    debugger
+
+                    if("<?php echo $video?>" != ""){
+                        var selectedEpisode = dataSeason.filter(x => x.slug == "<?php echo $video?>")[0];
 
                         if(selectedEpisode){
                                 showEpisodeFromUrl(selectedEpisode);
                         } else {
-                            var selectedEpisode = dataLiveEpisode.filter(x => x.slug == video)[0];
+                            var selectedEpisode = dataLiveEpisode.filter(x => x.slug == "<?php echo $video?>")[0];
                             if(selectedEpisode){
                                 showEpisodeFromUrl(selectedEpisode);
                             } else {
@@ -2186,7 +2349,7 @@ function displayOtherChannel(channel_slug){
             } else {
 
                 channel = sessionStorage.getItem('channel');
-                document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="~/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
+                document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="/assets/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
                 console.log('channel: ' + channel + ' ' + series);
                 document.getElementById('episodes-title').innerHTML = 'Latest ' + title.toUpperCase();
                 document.getElementById('header-banner-img').src = 'https://tv.digicentral.co.za:1339' + banner;
@@ -2199,7 +2362,7 @@ function displayOtherChannel(channel_slug){
         function selectSeries(season, title, banner){
             channel = sessionStorage.getItem('channel');
             document.getElementById('episodes-title').innerHTML = title;
-            document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="~/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
+            document.getElementById("video_swiper").innerHTML = '<div class="d-flex justify-content-center"><img src="/assets/images/blank.png"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>'
             if(banner){
                 document.getElementById('header-banner-img').src = 'https://tv.digicentral.co.za:1339' + banner;
             }
@@ -2326,7 +2489,7 @@ var player = 'player1';
                 'video_title' : episode_title,
                 'video_channel' : "Digi-TV",
                 'video_location_selected' : episode_location_selected,
-                "video_environment" : phpEnvironment
+                "video_environment" : urlDomain
             });
 
             player.autoplay = true;
@@ -2334,7 +2497,7 @@ var player = 'player1';
             console.log(player.source);
 
             var linkForShare = urlDomain
-            + '/' + mainChannel
+            + '/' + (globalChannel != "" ? globalChannel : sessionStorage.getItem("channel").toString() )
             + '/' + episode.getAttribute("slug");
         
             player.social.url = linkForShare;
@@ -2382,8 +2545,8 @@ var player = 'player1';
         });
 
         function showEpisodeFromUrl(episode) { 
-
             var episode_id = episode.id;
+            var episode_slug = episode.slug;
             var episode_src = "https://tv.digicentral.co.za:8082/content/" + episode.file_path;
             var episode_title = episode.name;
             var episode_story = episode.description;
@@ -2405,7 +2568,7 @@ var player = 'player1';
                 'video_title' : episode_title,
                 'video_channel' : "Digi-TV",
                 'video_location_selected' : "URL",
-                "video_environment" : phpEnvironment
+                "video_environment" : urlDomain
             });
 
             // console.log('hash ' + episode_hash);
@@ -2417,7 +2580,7 @@ var player = 'player1';
             console.log(player.source);
 
             var linkForShare = urlDomain
-            + '/' + mainChannel
+            + '/' + (globalChannel != "" ? globalChannel : sessionStorage.getItem("channel").toString() )
             + '/' + episode.slug;
 
             player.social.url = linkForShare;
@@ -2450,7 +2613,7 @@ var player = 'player1';
                 //     label : 'Embed',
                 //     text : '<iframe width="640" height="360" src="https://demo.theoplayer.com/social-sharing" frameborder="0" allowfullscreen>\n</iframe>',
                 // }
-        ];        
+            ];        
 
             $("#story").text(episode_story);
             $("#modalEpisodeDisplayLabel").text(episode_title);
@@ -2522,6 +2685,7 @@ var player = 'player1';
 
 </script>
 
+    <!-- main js file -->
     <script type="text/javascript" src="~/js/main_index.js"></script>
 
 </body>

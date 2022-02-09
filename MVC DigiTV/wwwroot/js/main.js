@@ -12,7 +12,7 @@ var carouselStyleBeforeExpand = {
 $(window).scroll(function(e) {
     var main = $("#main").height();
     var header = $("#header-img").height();
-    var total = main + header + 150;
+    var total = main + header + 350;
     
     if(($(window).scrollTop() + $(window).height()) >= total) {
         $(window).scrollTop( total - ($(window).height()));
@@ -487,6 +487,48 @@ function updateContainer() {
         openNav();
     }
 
+    $(".desktop-add-3").css({"margin-right" : "0px"});
+
+    if($containerWidth <= 770){
+        // $(".addWithindex1").css({"display" : "none"});
+        $(".full-ad-height").css({"height" : "310px"});
+    } else {
+        // $(".addWithindex1").css({"display" : "flex"});
+        $(".full-ad-height").css({"height" : "100%"});
+    }
+
+    // if ($containerWidth <= 2200) {
+    // $(".addWithindex2").css({"display" : "none"});
+    // } else {
+    //     $(".addWithindex2").css({"display" : "flex"});
+    // }
+
+    if ($containerWidth <= 1101) {
+        $(".full-ad-width").css({"width" : "50%"});
+        $(".full-ad-height").css({"height" : "310px"});
+    } else {
+        $(".full-ad-width").css({"width" : "100%"});
+        $(".full-ad-height").css({"height" : "100%"});
+    }
+    
+    if ($containerWidth <= 1865) {
+        $(".imageOfAdd").css({"width" : "337.68px"});
+        $(".banner-advertisement-desktop").css({"width" : "337.68px"});
+        $(".imageOfAdd").css({"height" : "90.45px"});
+        $(".banner-advertisement-desktop").css({"height" : "90.45px"});
+    } else {
+        $(".imageOfAdd").css({"width" : "504px"});
+        $(".banner-advertisement-desktop").css({"width" : "504px"});
+        $(".imageOfAdd").css({"height" : "135px"});
+        $(".banner-advertisement-desktop").css({"height" : "135px"});
+    }
+
+    if ($containerWidth <= 1351 && $containerWidth >= 1281) {
+        $(".full-ad-width").css({"width" : "50%"});
+        $(".full-ad-height").css({"height" : "310px"});
+    }
+
+
     var desktopCarouselContainer = $(".video-row").find(".purejscarousel");
     var mobileCarouselContainer = $(".video-row").find("#mobile-video-carousel");
     var mobileCarouselContainerPoster = $(".poster-row").find("#mobile-poster-carousel");
@@ -543,9 +585,9 @@ function updateContainer() {
 
         $("#episodes-title-id").css({"font-size": "20px"});
         $("#live-title").css({"font-size": "20px"});
-        $("#breadcrumbs").css({"margin-right": "0px"});
-        $("#breadcrumbs").css({"margin-top": "0rem"});
-        $("#breadcrumbs").css({"margin-bottom": "1rem"});
+        // $("#breadcrumbs").css({"margin-right": "0px"});
+        // $("#breadcrumbs").css({"margin-top": "0rem"});
+        // $("#breadcrumbs").css({"margin-bottom": "1rem"});
         $("#poster-title").css({"font-size": "20px"});
         $("#sub_category-title").css({"font-size": "20px"});
         $(".sub_category-title-class").css({"font-size": "20px"});
@@ -562,6 +604,12 @@ function updateContainer() {
         $("#video-live-expand_0").css("display: flex");
         $("#video-live-expand_0").css("justify-content", "center");
 
+        $(".banner-advertisement-row").css({"width" : "100%"});
+
+        $("#margin-for-ads-mobile").css({"margin-bottom" : "3rem"});
+
+        $("#header-img-mobile").css({"display" : "flex"});
+        $("#header-img-desktop").css({"display" : "none"});
     } else {
         desktopCarouselContainer.attr("style", "display: block");
         mobileCarouselContainer.attr("style", "display: none");
@@ -592,9 +640,9 @@ function updateContainer() {
         
         $(".video-title").css({ "font-size": "30px" });
         $("#live-title").css({ "font-size": "30px" });
-        $("#breadcrumbs").css({"margin-right": "250px"});
-        $("#breadcrumbs").css({"margin-top": "1rem"});
-        $("#breadcrumbs").css({"margin-bottom": "0rem"});
+        // $("#breadcrumbs").css({"margin-right": "250px"});
+        // $("#breadcrumbs").css({"margin-top": "1rem"});
+        // $("#breadcrumbs").css({"margin-bottom": "0rem"});
         $("#episodes-title-id").css({"font-size": "30px"});
         $("#poster-title").css({"font-size": "30px"});
         $("#sub_category-title").css({"font-size": "30px"});
@@ -611,9 +659,12 @@ function updateContainer() {
 
         $("#poster-expand_0").css("display: flex");
         $("#poster-expand_0").css("justify-content", "flex-start");
-        
 
         $("#video-live-expand_0").css({"justify-content": "flex-start"});
+        $("#margin-for-ads-mobile").css({"margin-bottom" : "1rem"});
+
+        $("#header-img-mobile").css({"display" : "none"});
+        $("#header-img-desktop").css({"display" : "flex"});
     }
 }
 
@@ -971,7 +1022,7 @@ function changeChannelFromList(domain, channel) {
 
 function createBreadCrumbs(channel, category, school, schoolCategory) {
     if(channel){
-        $('#breadcrumbs').css("margin-top", "1rem");
+        // $('#breadcrumbs').css("margin-top", "1rem");
 
         var channelName = "";
         var categoryName = "";

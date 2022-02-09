@@ -172,13 +172,6 @@ body #header-img {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  body #header-img {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
-
 body #mini-sidenav {
   width: 57px;
   margin-left: 5px;
@@ -873,7 +866,7 @@ body #main .poster-row #mobile-poster-carousel .carousel-item img {
     display: none;
   }
   body .flipping-advertisement {
-    display: block;
+    display: contents;
   }
 }
 
@@ -1389,5 +1382,9 @@ body .black-opaque-bg {
 
 #channelsModal {
   color: #a5a5a5;
+}
+.back-img-overlay-text {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 /*# sourceMappingURL=main_3.css.map */

@@ -172,12 +172,12 @@ body #header-img {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  body #header-img {
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-}
+// @media screen and (max-width: 768px) {
+//   body #header-img {
+//     padding-left: 70px;
+//     padding-right: 70px;
+//   }
+// }
 
 body #mini-sidenav {
   width: 57px;
@@ -878,7 +878,7 @@ body #main .poster-row #mobile-poster-carousel .carousel-item img {
     display: none;
   }
   body .flipping-advertisement {
-    display: block;
+    display: contents;
   }
 }
 
@@ -1396,3 +1396,8 @@ body .black-opaque-bg {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.back-img-overlay-text{
+  padding-left: 8px;
+  padding-right: 8px;
+}

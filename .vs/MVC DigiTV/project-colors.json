@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ac0f23fa-6c42-4680-8536-b5bb07b65201": {
+      "ProjectGuid": "ac0f23fa-6c42-4680-8536-b5bb07b65201",
+      "DisplayName": "MVC DigiTV",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
